@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-import com.mycompany.yago_gazeteet_project.GazeteerClass;
-import com.mycompany.yago_gazeteet_project.GazeteerDataSet;
-import com.mycompany.yago_gazeteet_project.YAGOParser;
+import YagoGazeeterParser.GazeteerClass;
+import YagoGazeeterParser.GazeteerDataSet;
+import YagoGazeeterParser.YAGOParser;
 import java.util.List;
 import org.junit.Assert;
 import org.junit.Test;
