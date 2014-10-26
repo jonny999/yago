@@ -6,8 +6,10 @@
 package YagoGazeeterParser;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -37,6 +39,17 @@ public class YAGOParser {
 
         BufferedReader input = this.openYAGOFile(path);
         this.processFile(input);
+        
+         try {
+        BufferedWriter out = new BufferedWriter(new FileWriter("../data/firstParsersOutput.txt"));
+             for (GazeteerClass gazClass: gazeteerDataSet.getClasses()) {
+                  out.write("Class title: " + gazClass.getName() + "\n");
+                 for (String title : gazClass.getItems()) {
+                     out.write("\t\tElement name: " + title + "\n");
+                 }
+             }
+            out.close();
+        } catch (IOException e) {}
     }
 
     public GazeteerDataSet getGazeteerDataSet() {
