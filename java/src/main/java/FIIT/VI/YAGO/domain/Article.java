@@ -59,6 +59,17 @@ public class Article {
 		return mapper.writeValueAsString(this);
 	}
 
+	public String toAlternativesNames() {
+		StringBuilder builder = new StringBuilder();
+		builder.append(this.getName());
+
+		for (Names n : this.getNames()) {
+			builder.append("\t" + n.getName());
+		}
+
+		return builder.toString();
+	}
+
 	public List<Names> getNames() {
 		if (names == null) {
 			names = new ArrayList<Names>();
