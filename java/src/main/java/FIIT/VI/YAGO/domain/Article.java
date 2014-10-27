@@ -17,6 +17,7 @@ public class Article {
 	private String ulrWikipedia;
 	private List<String> linksTo;
 	private List<Names> names;
+	private List<String> categories;
 
 	public String getName() {
 		return name;
@@ -80,6 +81,18 @@ public class Article {
 
 	public void setNames(List<Names> names) {
 		this.names = names;
+	}
+
+	public List<String> getCategories() {
+		if (categories == null) {
+			this.categories = new ArrayList<String>();
+		}
+
+		return categories;
+	}
+
+	public void setCategories(List<String> categories) {
+		this.categories = categories;
 	}
 
 }
