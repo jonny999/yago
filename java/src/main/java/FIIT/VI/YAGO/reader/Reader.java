@@ -9,9 +9,11 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import FIIT.VI.YAGO.configuration.Configuration;
+import FIIT.VI.YAGO.domain.RDFTriplet;
 
 public class Reader {
 
@@ -51,4 +53,17 @@ public class Reader {
 		lineReader.close();
 		return size;
 	}	
+	
+	public RDFTriplet toRDF() {
+		Matcher m = PATTERN_RDF.matcher(line);
+		if (m.find()) {
+			return new RDFTriplet(m.group(1), m.group(2), m.group(3));
+		}
+
+		return null;
+	}
+	
+	public boolean isWikiLink() {
+		return PATTERN_RDF.matcher(line).find();
+	}
 }
