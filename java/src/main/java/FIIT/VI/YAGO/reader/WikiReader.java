@@ -7,7 +7,7 @@ import java.util.regex.Pattern;
 import FIIT.VI.YAGO.domain.Article;
 import FIIT.VI.YAGO.domain.RDFTriplet;
 
-public class YagoReader extends Reader {
+public class WikiReader extends Reader {
 
 	private static final String REGEX_RDF = "<(.*)>\t<(.*)>\t<?(.*)\\b>?";
 	private static final String REGEX_URL = "<(.*)>\t<(hasWikipediaUrl)>\t?<(.*)?>.";
@@ -20,11 +20,11 @@ public class YagoReader extends Reader {
 	private String line;
 	private String previousLine;
 
-	public YagoReader() throws IOException {
+	public WikiReader() throws IOException {
 		initiliaze();
 	}
 
-	public YagoReader(String pathTo) throws IOException {
+	public WikiReader(String pathTo) throws IOException {
 		path = pathTo;
 		initiliaze();
 	}

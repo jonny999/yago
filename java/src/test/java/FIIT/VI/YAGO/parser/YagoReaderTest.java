@@ -11,16 +11,16 @@ import org.junit.Before;
 import org.junit.Test;
 
 import FIIT.VI.YAGO.domain.Article;
-import FIIT.VI.YAGO.reader.YagoReader;
+import FIIT.VI.YAGO.reader.WikiReader;
 
 public class YagoReaderTest {
 
 	private final static String PRIMARY_DATA_NAME = "src//resources//test//sample_yago_wiki.txt";
-	private YagoReader reader;
+	private WikiReader reader;
 
 	@Before
 	public void setup() throws IOException {
-		reader = new YagoReader(PRIMARY_DATA_NAME);
+		reader = new WikiReader(PRIMARY_DATA_NAME);
 	}
 
 	@Test
