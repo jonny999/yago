@@ -8,12 +8,10 @@ import org.codehaus.jackson.JsonGenerationException;
 import org.codehaus.jackson.map.JsonMappingException;
 import org.codehaus.jackson.map.ObjectMapper;
 
-import com.google.gson.Gson;
-
 public class Article {
 
-	private final Gson gson = new Gson();
-
+	private static final ObjectMapper mapper = new ObjectMapper();
+	
 	private String name;
 	private String size;
 	private String ulrWikipedia;
@@ -57,13 +55,7 @@ public class Article {
 
 
 	public String toJson() throws JsonGenerationException, JsonMappingException, IOException {
-	      ObjectMapper mapper = new ObjectMapper();
-		
 		return mapper.writeValueAsString(this);
-		/*Object c= gson.toJsonTree(this);
-		
-		
-		return gson.toJson(this);*/
 	}
 
 }

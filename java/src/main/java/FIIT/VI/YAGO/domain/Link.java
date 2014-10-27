@@ -1,10 +1,16 @@
 package FIIT.VI.YAGO.domain;
 
-import com.google.gson.Gson;
+import java.io.IOException;
+
+import org.codehaus.jackson.JsonGenerationException;
+import org.codehaus.jackson.map.JsonMappingException;
+import org.codehaus.jackson.map.ObjectMapper;
+
 
 public class Link {
-	private final Gson gson = new Gson();
 
+	private static final ObjectMapper mapper = new ObjectMapper();
+	
 	private String relation;
 	private String object;
 
@@ -33,7 +39,7 @@ public class Link {
 		this.object = object;
 	}
 
-	public String toJson() {
-		return gson.toJson(this);
+	public String toJson() throws JsonGenerationException, JsonMappingException, IOException {
+		return mapper.writeValueAsString(this);
 	}
 }

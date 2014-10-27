@@ -13,13 +13,9 @@ import org.junit.Test;
 import FIIT.VI.YAGO.domain.Article;
 import FIIT.VI.YAGO.reader.YagoReader;
 
-import com.google.gson.Gson;
-
 public class YagoReaderTest {
 
 	private final static String PRIMARY_DATA_NAME = "src//resources//test//sample_yago_wiki.txt";
-	private final Gson gson = new Gson();
-
 	private YagoReader reader;
 
 	@Before
