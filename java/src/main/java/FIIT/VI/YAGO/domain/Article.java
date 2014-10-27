@@ -67,7 +67,18 @@ public class Article {
 		for (Names n : this.getNames()) {
 			builder.append("\t" + n.getName());
 		}
+		builder.append("\n");
+		return builder.toString();
+	}
+	
+	public String toCategoriesNames() {
+		StringBuilder builder = new StringBuilder();
+		builder.append(this.getName());
 
+		for (String n : this.getCategories()) {
+			builder.append("\t" + n);
+		}
+		builder.append("\n");
 		return builder.toString();
 	}
 
