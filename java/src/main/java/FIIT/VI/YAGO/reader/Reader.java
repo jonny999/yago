@@ -46,6 +46,8 @@ public class Reader {
 
 		LineNumberReader lineReader = new LineNumberReader(new FileReader(aFile));
 		lineReader.skip(Long.MAX_VALUE);
-		return lineReader.getLineNumber();
+		long size =lineReader.getLineNumber(); 
+		lineReader.close();
+		return size;
 	}	
 }
