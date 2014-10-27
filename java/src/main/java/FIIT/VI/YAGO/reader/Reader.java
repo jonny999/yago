@@ -9,15 +9,21 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.regex.Pattern;
 
 import FIIT.VI.YAGO.configuration.Configuration;
 
 public class Reader {
 
 	protected BufferedReader reader;
+	protected String line;
+
 	protected String path = Configuration.getDefaultData();
 	private final static Charset ENCODING = StandardCharsets.UTF_8;
 
+	private static final String REGEX_RDF = "<(.*)>\t(.*)\t<?(.*)\\b>?";
+	protected static final Pattern PATTERN_RDF = Pattern.compile(REGEX_RDF);
+	
 	protected void initiliaze() throws IOException {
 
 		Path pathToFile = Paths.get(path);

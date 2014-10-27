@@ -9,15 +9,12 @@ import FIIT.VI.YAGO.domain.RDFTriplet;
 
 public class WikiReader extends Reader {
 
-	private static final String REGEX_RDF = "<(.*)>\t<(.*)>\t<?(.*)\\b>?";
 	private static final String REGEX_URL = "<(.*)>\t<(hasWikipediaUrl)>\t?<(.*)?>.";
 	private static final String REGEX_ARTICLE = "<(.*)>\t<(hasWikipediaArticleLength)>\t(.*)";
 
 	private static final Pattern PATTERN_WIKI = Pattern.compile(REGEX_ARTICLE);
 	private static final Pattern PATTERN_URL = Pattern.compile(REGEX_URL);
-	private static final Pattern PATTERN_RDF = Pattern.compile(REGEX_RDF);
 
-	private String line;
 	private String previousLine;
 
 	public WikiReader() throws IOException {
