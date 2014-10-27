@@ -10,25 +10,27 @@ import FIIT.VI.YAGO.reader.WikiReader;
 
 public class WikiParser {
 
-	public static void createWikiArticles(String path, WikiReader reader)
+	public static void createBaseWikiArticles(String path, WikiReader reader)
 			throws IOException {
 		Article a;
-		FileWriter writer;
-		File file;
-		BufferedWriter bw;
-
+		
 		while ((a = reader.readArticle()) != null) {
-
-			file = new File(path + a.getName() + ".json");
-
-			if (!file.exists()) {
-				file.createNewFile();
-			}
-			writer = new FileWriter(file.getAbsolutePath());
-			bw = new BufferedWriter(writer);
-
-			bw.write(a.toJson());
-			bw.close();
+			createAndSave(a.toJson(), a.getName(), path);
 		}
+	}
+	
+	
+	private static void createAndSave(String json, String name, String path)
+			throws IOException {
+		File file = new File(path + name + ".json");
+
+		if (!file.exists()) {
+			file.createNewFile();
+		}
+		FileWriter writer = new FileWriter(file.getAbsolutePath());
+		BufferedWriter bw = new BufferedWriter(writer);
+
+		bw.write(json);
+		bw.close();
 	}
 }

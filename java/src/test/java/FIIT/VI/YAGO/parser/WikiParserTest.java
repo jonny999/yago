@@ -22,7 +22,7 @@ public class WikiParserTest {
 	@Before
 	public void setup() throws IOException {
 		reader = new WikiReader(DATA);
-		WikiParser.createWikiArticles("src//resources//test//wiki//", reader);
+		WikiParser.createBaseWikiArticles("src//resources//test//wiki//", reader);
 	}
 
 	@Test
