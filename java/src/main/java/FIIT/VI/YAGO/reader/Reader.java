@@ -39,12 +39,7 @@ public class Reader {
 	}
 	
 	public long linesCount() throws IOException{
-		return linesCount(path);
-	}
-
-	public long linesCount(String aFile) throws IOException {
-
-		LineNumberReader lineReader = new LineNumberReader(new FileReader(aFile));
+		LineNumberReader lineReader = new LineNumberReader(new FileReader(path));
 		lineReader.skip(Long.MAX_VALUE);
 		long size =lineReader.getLineNumber(); 
 		lineReader.close();
