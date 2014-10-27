@@ -15,7 +15,7 @@ public class Article {
 	private String name;
 	private String size;
 	private String ulrWikipedia;
-	private List<Link> linksTo;
+	private List<String> linksTo;
 
 	public String getName() {
 		return name;
@@ -41,15 +41,15 @@ public class Article {
 		this.ulrWikipedia = ulrWikipedia;
 	}
 
-	public List<Link> getLinksTo() {
+	public List<String> getLinksTo() {
 		if(linksTo==null){
-			linksTo = new ArrayList<Link>();
+			linksTo = new ArrayList<String>();
 		}
 		
 		return linksTo;
 	}
 
-	public void setLinksTo(List<Link> linksTo) {
+	public void setLinksTo(List<String> linksTo) {
 		this.linksTo = linksTo;
 	}
 

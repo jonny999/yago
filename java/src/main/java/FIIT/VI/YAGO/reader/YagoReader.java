@@ -5,7 +5,6 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import FIIT.VI.YAGO.domain.Article;
-import FIIT.VI.YAGO.domain.Link;
 import FIIT.VI.YAGO.domain.RDFTriplet;
 
 public class YagoReader extends Reader {
@@ -60,9 +59,7 @@ public class YagoReader extends Reader {
 				} else if (isWikiLink()) {
 
 					RDFTriplet triplet = toRDF();
-					article.getLinksTo()
-							.add(new Link(triplet.getRelation(), triplet
-									.getObject()));
+					article.getLinksTo().add(triplet.getObject());
 				}
 			}
 			previousLine=line;
