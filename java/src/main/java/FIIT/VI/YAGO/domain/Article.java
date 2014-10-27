@@ -11,11 +11,12 @@ import org.codehaus.jackson.map.ObjectMapper;
 public class Article {
 
 	private static final ObjectMapper mapper = new ObjectMapper();
-	
+
 	private String name;
 	private String size;
 	private String ulrWikipedia;
 	private List<String> linksTo;
+	private List<Names> names;
 
 	public String getName() {
 		return name;
@@ -42,10 +43,10 @@ public class Article {
 	}
 
 	public List<String> getLinksTo() {
-		if(linksTo==null){
+		if (linksTo == null) {
 			linksTo = new ArrayList<String>();
 		}
-		
+
 		return linksTo;
 	}
 
@@ -53,9 +54,21 @@ public class Article {
 		this.linksTo = linksTo;
 	}
 
-
-	public String toJson() throws JsonGenerationException, JsonMappingException, IOException {
+	public String toJson() throws JsonGenerationException,
+			JsonMappingException, IOException {
 		return mapper.writeValueAsString(this);
+	}
+
+	public List<Names> getNames() {
+		if (names == null) {
+			names = new ArrayList<Names>();
+		}
+
+		return names;
+	}
+
+	public void setNames(List<Names> names) {
+		this.names = names;
 	}
 
 }
