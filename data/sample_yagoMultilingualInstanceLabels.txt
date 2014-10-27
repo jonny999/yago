@@ -1,0 +1,102 @@
+# This file is part of the ontology YAGO2s
+# It is licensed under a Creative-Commons Attribution License by the YAGO team
+# at the Max Planck Institute for Informatics/Germany.
+# See http://yago-knowledge.org for all details.
+# This file was generated on 2012-10-08 T 16:11:55.0687.
+# 
+# 
+# Names for the Wikipedia instances in multiple languages
+# MULTILINGUAL
+
+@base <http://yago-knowledge.org/resource/> .
+@prefix dbp: <http://dbpedia.org/ontology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<Puyi>	rdfs:label	"بوئي"@ar .
+<Puyi>	rdfs:label	"Пу И"@bg .
+<Puyi>	rdfs:label	"Pu Yi"@ca .
+<Puyi>	rdfs:label	"Pchu I"@cs .
+<Puyi>	rdfs:label	"Puyi"@da .
+<Puyi>	rdfs:label	"Pu Yi"@de .
+<Puyi>	rdfs:label	"Pu Yi"@et .
+<Puyi>	rdfs:label	"Puyi"@es .
+<Puyi>	rdfs:label	"Pu Yi"@eo .
+<Puyi>	rdfs:label	"پویی"@fa .
+<Puyi>	rdfs:label	"Puyi"@fr .
+<Puyi>	rdfs:label	"Puyi"@gl .
+<Puyi>	rdfs:label	"푸이"@ko .
+<Puyi>	rdfs:label	"Kaisar Xuantong"@id .
+<Puyi>	rdfs:label	"Pu Yi"@it .
+<Puyi>	rdfs:label	"הנרי פו-יי"@he .
+<Puyi>	rdfs:label	"Henry PuYi"@jv .
+<Puyi>	rdfs:label	"პუი"@ka .
+<Puyi>	rdfs:label	"Puyi"@lt .
+<Puyi>	rdfs:label	"Pu Ji"@hu .
+<Puyi>	rdfs:label	"फू-यी"@mr .
+<Puyi>	rdfs:label	"Puyi"@ms .
+<Puyi>	rdfs:label	"Pu Yi"@nl .
+<Puyi>	rdfs:label	"愛新覚羅溥儀"@ja .
+<Puyi>	rdfs:label	"Puyi"@no .
+<Puyi>	rdfs:label	"Puyi"@pl .
+<Puyi>	rdfs:label	"Puyi"@pt .
+<Puyi>	rdfs:label	"Pu Yi"@ro .
+<Puyi>	rdfs:label	"Пу И"@ru .
+<Puyi>	rdfs:label	"Puyi"@simple .
+<Puyi>	rdfs:label	"Pu Yi"@fi .
+<Puyi>	rdfs:label	"Puyi"@sv .
+<Puyi>	rdfs:label	"Puyi"@tl .
+<Puyi>	rdfs:label	"จักรพรรดิผู่อี๋"@th .
+<Puyi>	rdfs:label	"Puyi"@tr .
+<Puyi>	rdfs:label	"Пу І"@uk .
+<Puyi>	rdfs:label	"Phổ Nghi"@vi .
+<Puyi>	rdfs:label	"溥儀"@zh-yue .
+<Puyi>	rdfs:label	"溥仪"@zh .
+<Edwin_Edwards>	rdfs:label	"Edwin Edwards"@cs .
+<Edwin_Edwards>	rdfs:label	"Edwin Edwards"@de .
+<Edwin_Edwards>	rdfs:label	"Edwin Edwards"@fr .
+<Edwin_Edwards>	rdfs:label	"Edwin Washington Edwards"@la .
+<Edwin_Edwards>	rdfs:label	"Edwin Edwards"@pt .
+<Edwin_Edwards>	rdfs:label	"Едвін Едвардс"@uk .
+<Kid_Rock>	rdfs:label	"Кид Рок"@bg .
+<Kid_Rock>	rdfs:label	"Kid Rock"@cs .
+<Kid_Rock>	rdfs:label	"Kid Rock"@da .
+<Kid_Rock>	rdfs:label	"Kid Rock"@de .
+<Kid_Rock>	rdfs:label	"Kid Rock"@es .
+<Kid_Rock>	rdfs:label	"کید راک"@fa .
+<Kid_Rock>	rdfs:label	"Kid Rock"@fr .
+<Kid_Rock>	rdfs:label	"Kid Rock"@it .
+<Kid_Rock>	rdfs:label	"Kid Rock"@lv .
+<Kid_Rock>	rdfs:label	"Kid Rock"@nl .
+<Kid_Rock>	rdfs:label	"キッド・ロック"@ja .
+<Kid_Rock>	rdfs:label	"Kid Rock"@no .
+<Kid_Rock>	rdfs:label	"Kid Rock"@pl .
+<Kid_Rock>	rdfs:label	"Kid Rock"@pt .
+<Kid_Rock>	rdfs:label	"Кид Рок"@ru .
+<Kid_Rock>	rdfs:label	"Kid Rock"@simple .
+<Kid_Rock>	rdfs:label	"Kid Rock"@sk .
+<Kid_Rock>	rdfs:label	"Kid Rock"@fi .
+<Kid_Rock>	rdfs:label	"Kid Rock"@sv .
+<Kid_Rock>	rdfs:label	"คิด ร็อก"@th .
+<Kid_Rock>	rdfs:label	"Kid Rock"@tr .
+<Susilo_Bambang_Yudhoyono>	rdfs:label	"Susilo Bambang Yudhoyono"@af .
+<Susilo_Bambang_Yudhoyono>	rdfs:label	"سوسيلو بانبانغ يودهونو"@ar .
+<Susilo_Bambang_Yudhoyono>	rdfs:label	"Susilo Bambang Yudhoyono"@bjn .
+<Susilo_Bambang_Yudhoyono>	rdfs:label	"Susilo Bambang Yudhoyono"@map-bms .
+<Susilo_Bambang_Yudhoyono>	rdfs:label	"Сусіла Бамбанг Юдаёна"@be .
+<Susilo_Bambang_Yudhoyono>	rdfs:label	"Susilo Bambang Yudhoyono"@bs .
+<Susilo_Bambang_Yudhoyono>	rdfs:label	"Susilo Bambang Yudhoyono"@br .
+<Susilo_Bambang_Yudhoyono>	rdfs:label	"Susilo Bambang Yudhoyono"@ca .
+<Susilo_Bambang_Yudhoyono>	rdfs:label	"Susilo Bambang Yudhoyono"@cy .
+<Susilo_Bambang_Yudhoyono>	rdfs:label	"Susilo Bambang Yudhoyono"@da .
+<Susilo_Bambang_Yudhoyono>	rdfs:label	"Susilo Bambang Yudhoyono"@de .
+<Susilo_Bambang_Yudhoyono>	rdfs:label	"Susilo Bambang Yudhoyono"@et .
+<Susilo_Bambang_Yudhoyono>	rdfs:label	"Σουσίλο Μπάμπανγκ Γιουντχογιόνο"@el .
+<Susilo_Bambang_Yudhoyono>	rdfs:label	"Susilo Bambang Yudhoyono"@es .
+<Susilo_Bambang_Yudhoyono>	rdfs:label	"Susilo Bambang Yudhoyono"@eo .
+<Susilo_Bambang_Yudhoyono>	rdfs:label	"Susilo Bambang Yudhoyono"@fr .
+<Susilo_Bambang_Yudhoyono>	rdfs:label	"Susilo Bambang Yudhoyono"@fy .
+<Susilo_Bambang_Yudhoyono>	rdfs:label	"Susilo Bambang Yudhoyono"@gl .

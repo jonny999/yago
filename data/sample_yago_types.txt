@@ -1,0 +1,102 @@
+# This file is part of the ontology YAGO2s
+# It is licensed under a Creative-Commons Attribution License by the YAGO team
+# at the Max Planck Institute for Informatics/Germany.
+# See http://yago-knowledge.org for all details.
+# This file was generated on 2012-10-08 T 16:11:41.0682.
+# 
+# 
+# All rdf:type facts of YAGO
+# TAXONOMY
+
+@base <http://yago-knowledge.org/resource/> .
+@prefix dbp: <http://dbpedia.org/ontology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+#@ <id_zk1lo5_88c_hp8lif>
+<Puyi>	rdf:type	<wikicategory_Manchu_people> .
+#@ <id_zk1lo5_88c_1rnonu9>
+<Puyi>	rdf:type	<wordnet_sovereign_110628644> .
+#@ <id_zk1lo5_88c_171hkse>
+<Puyi>	rdf:type	<wikicategory_People_of_the_Xinhai_Revolution> .
+#@ <id_zk1lo5_88c_116u3xi>
+<Puyi>	rdf:type	<wikicategory_People_of_Manchukuo> .
+#@ <id_zk1lo5_88c_1xo2qup>
+<Puyi>	rdf:type	<wikicategory_Child_rulers_from_Asia> .
+#@ <id_t05j86_88c_rzuh17>
+<Edwin_Edwards>	rdf:type	<wikicategory_American_people_of_French_descent> .
+#@ <id_t05j86_88c_124xfnl>
+<Edwin_Edwards>	rdf:type	<wikicategory_People_from_Crowley,_Louisiana> .
+#@ <id_t05j86_88c_1krd7zu>
+<Edwin_Edwards>	rdf:type	<wikicategory_Cajun_people> .
+#@ <id_t05j86_88c_xoarp2>
+<Edwin_Edwards>	rdf:type	<wikicategory_People_from_Avoyelles_Parish,_Louisiana> .
+#@ <id_t05j86_88c_1fvtmno>
+<Edwin_Edwards>	rdf:type	<wikicategory_Living_people> .
+#@ <id_mlburi_88c_1msayxj>
+<Kid_Rock>	rdf:type	<wikicategory_Rap_rock_musicians> .
+#@ <id_mlburi_88c_1y84oxp>
+<Kid_Rock>	rdf:type	<wikicategory_People_from_Macomb_County,_Michigan> .
+#@ <id_mlburi_88c_1fvtmno>
+<Kid_Rock>	rdf:type	<wikicategory_Living_people> .
+#@ <id_d4xsg9_88c_m14vo>
+<Susilo_Bambang_Yudhoyono>	rdf:type	<wikicategory_People_from_Pacitan> .
+#@ <id_d4xsg9_88c_1fvtmno>
+<Susilo_Bambang_Yudhoyono>	rdf:type	<wikicategory_Living_people> .
+#@ <id_d4xsg9_88c_1u265o2>
+<Susilo_Bambang_Yudhoyono>	rdf:type	<wikicategory_Javanese_people> .
+#@ <id_d4xsg9_88c_1ye81zr>
+<Susilo_Bambang_Yudhoyono>	rdf:type	<wikicategory_Presidents_of_Indonesia> .
+#@ <id_rd6ver_88c_1q55j82>
+<Deval_Patrick>	rdf:type	<wikicategory_People_from_Chicago,_Illinois> .
+#@ <id_rd6ver_88c_1fvtmno>
+<Deval_Patrick>	rdf:type	<wikicategory_Living_people> .
+#@ <id_73n1l5_88c_yq1scq>
+<Faye_Wong>	rdf:type	<wikicategory_Video_game_musicians> .
+#@ <id_73n1l5_88c_a7azyg>
+<Faye_Wong>	rdf:type	<wikicategory_People_from_Beijing> .
+#@ <id_73n1l5_88c_9hluox>
+<Faye_Wong>	rdf:type	<wikicategory_People_with_acquired_permanent_residency_of_Hong_Kong> .
+#@ <id_73n1l5_88c_1fvtmno>
+<Faye_Wong>	rdf:type	<wikicategory_Living_people> .
+#@ <id_1mi5yud_88c_px4fpl>
+<Hu_Jintao>	rdf:type	<wikicategory_Presidents_of_the_People's_Republic_of_China> .
+#@ <id_1mi5yud_88c_1tm1ax4>
+<Hu_Jintao>	rdf:type	<wikicategory_Communist_rulers> .
+#@ <id_1mi5yud_88c_1rdt68h>
+<Hu_Jintao>	rdf:type	<wikicategory_Vice_Presidents_of_the_People's_Republic_of_China> .
+#@ <id_1mi5yud_88c_j2foxc>
+<Hu_Jintao>	rdf:type	<wikicategory_People_from_Taizhou,_Jiangsu> .
+#@ <id_1mi5yud_88c_1fvtmno>
+<Hu_Jintao>	rdf:type	<wikicategory_Living_people> .
+#@ <id_1t1tyq9_88c_1fvtmno>
+<Sete_Gibernau>	rdf:type	<wikicategory_Living_people> .
+#@ <id_13qu9xi_88c_1l8xqr3>
+<Michael_Foot>	rdf:type	<wikicategory_Presidents_of_the_Oxford_Union> .
+#@ <id_13qu9xi_88c_1cu8axs>
+<Michael_Foot>	rdf:type	<wikicategory_People_from_Plymouth> .
+#@ <id_13qu9xi_88c_1rfrpxp>
+<Michael_Foot>	rdf:type	<wikicategory_People_educated_at_Plymouth_College> .
+#@ <id_13qu9xi_88c_pux5xa>
+<Michael_Foot>	rdf:type	<wikicategory_Lord_Presidents_of_the_Council> .
+#@ <id_13qu9xi_88c_lk9kbo>
+<Michael_Foot>	rdf:type	<wikicategory_Critics_of_the_European_Union> .
+#@ <id_13qu9xi_88c_xo9gya>
+<Michael_Foot>	rdf:type	<wikicategory_English_people_of_Scottish_descent> .
+#@ <id_13qu9xi_88c_prqh5>
+<Michael_Foot>	rdf:type	<wikicategory_Evening_Standard_people> .
+#@ <id_13qu9xi_88c_1kjsz2w>
+<Michael_Foot>	rdf:type	<wikicategory_Fellows_of_the_Royal_Society_of_Literature> .
+#@ <id_l6fnfm_88c_19stmom>
+<Kim_Philby>	rdf:type	<wikicategory_People_from_Ambala> .
+#@ <id_l6fnfm_88c_1thkqyz>
+<Kim_Philby>	rdf:type	<wikicategory_People_educated_at_Aldro> .
+#@ <id_hy7olj_88c_19fgi4n>
+<Sacha_Baron_Cohen>	rdf:type	<wikicategory_People_from_Hammersmith> .
+#@ <id_hy7olj_88c_1p1k6r3>
+<Sacha_Baron_Cohen>	rdf:type	<wikicategory_People_from_Rosh_HaNikra> .
+#@ <id_hy7olj_88c_hsj9sm>
+<Sacha_Baron_Cohen>	rdf:type	<wordnet_person_100007846> .
