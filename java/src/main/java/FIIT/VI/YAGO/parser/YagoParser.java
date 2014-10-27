@@ -15,7 +15,6 @@ import FIIT.VI.YAGO.domain.RDFTriplet;
 
 public class YagoParser {
 
-	private static final String REGEX_RDF = "<(.*)>\t<(.*)>\t?<(.*)?>.";
 	private static final String WIKI_URL = "<(.*)>\t<(hasWikipediaUrl)>\t?<(.*)?>.";
 	private static final Pattern PATTERN = Pattern.compile(WIKI_URL);
 	

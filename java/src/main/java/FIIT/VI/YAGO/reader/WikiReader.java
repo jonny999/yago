@@ -1,31 +1,24 @@
 package FIIT.VI.YAGO.reader;
 
 import java.io.IOException;
-import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import FIIT.VI.YAGO.domain.Article;
-import FIIT.VI.YAGO.domain.Link;
 import FIIT.VI.YAGO.domain.RDFTriplet;
 
-public class YagoReader extends Reader {
+public class WikiReader extends Reader {
 
-	private static final String REGEX_RDF = "<(.*)>\t<(.*)>\t<?(.*)\\b>?";
 	private static final String REGEX_URL = "<(.*)>\t<(hasWikipediaUrl)>\t?<(.*)?>.";
 	private static final String REGEX_ARTICLE = "<(.*)>\t<(hasWikipediaArticleLength)>\t(.*)";
 
 	private static final Pattern PATTERN_WIKI = Pattern.compile(REGEX_ARTICLE);
 	private static final Pattern PATTERN_URL = Pattern.compile(REGEX_URL);
-	private static final Pattern PATTERN_RDF = Pattern.compile(REGEX_RDF);
 
-	private String line;
-	private String previousLine;
-
-	public YagoReader() throws IOException {
+	public WikiReader() throws IOException {
 		initiliaze();
 	}
 
-	public YagoReader(String pathTo) throws IOException {
+	public WikiReader(String pathTo) throws IOException {
 		path = pathTo;
 		initiliaze();
 	}
@@ -35,8 +28,8 @@ public class YagoReader extends Reader {
 		Article article = new Article();
 		boolean found = false;
 
-		if(previousLine!=null && isWikiArticle(previousLine)){
-			RDFTriplet triplet = toRDF(previousLine);
+		if(line!=null && isWikiArticle()){
+			RDFTriplet triplet = toRDF();
 			article.setName(triplet.getSubject());
 			article.setSize(triplet.getObject());
 			found=true;
@@ -52,7 +45,6 @@ public class YagoReader extends Reader {
 			} else if (found) {
 
 				if (isWikiArticle()) {
-					previousLine = line;
 					break;
 				} else if (isWikiURL()) {
 					RDFTriplet triplet = toRDF();
@@ -60,34 +52,13 @@ public class YagoReader extends Reader {
 				} else if (isWikiLink()) {
 
 					RDFTriplet triplet = toRDF();
-					article.getLinksTo()
-							.add(new Link(triplet.getRelation(), triplet
-									.getObject()));
+					article.getLinksTo().add(triplet.getObject());
 				}
 			}
-			previousLine=line;
 		}
 
 		if (found) {
 			return article;
-		}
-
-		return null;
-	}
-
-	public RDFTriplet toRDF() {
-		Matcher m = PATTERN_RDF.matcher(line);
-		if (m.find()) {
-			return new RDFTriplet(m.group(1), m.group(2), m.group(3));
-		}
-
-		return null;
-	}
-
-	public RDFTriplet toRDF(String l) {
-		Matcher m = PATTERN_RDF.matcher(l);
-		if (m.find()) {
-			return new RDFTriplet(m.group(1), m.group(2), m.group(3));
 		}
 
 		return null;
@@ -107,13 +78,5 @@ public class YagoReader extends Reader {
 
 	public boolean isWikiURL(String l) {
 		return PATTERN_URL.matcher(l).find();
-	}
-
-	public boolean isWikiLink() {
-		return PATTERN_RDF.matcher(line).find();
-	}
-
-	public boolean isWikiLink(String l) {
-		return PATTERN_RDF.matcher(l).find();
 	}
 }
