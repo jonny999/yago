@@ -41,20 +41,18 @@ public class YagoReaderTest {
 	@Test
 	public void readArticles() throws IOException {
 		reader.reload();
-		 FileWriter writer = new FileWriter("src//resources//test//output.json");  
-		 List<Article> jsons = new ArrayList<Article>();
+		FileWriter writer = new FileWriter("src//resources//test//output.json");
+		List<Article> jsons = new ArrayList<Article>();
 		Article a;
 		while ((a = reader.readArticle()) != null) {
 			jsons.add(a);
 		}
-	      ObjectMapper mapper = new ObjectMapper();
-	      
-	      String s = mapper.writeValueAsString(jsons);
-	      
+		ObjectMapper mapper = new ObjectMapper();
 
-		writer.write(mapper.writeValueAsString(jsons));  
-		   writer.close();  
+		String s = mapper.writeValueAsString(jsons);
 
+		writer.write(mapper.writeValueAsString(jsons));
+		writer.close();
 
 	}
 

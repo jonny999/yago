@@ -22,8 +22,8 @@ public class WikiParser {
 			file = new File(path + a.getName() + ".json");
 
 			if (!file.exists()) {
-                file.createNewFile();
-            }
+				file.createNewFile();
+			}
 			writer = new FileWriter(file.getAbsolutePath());
 			bw = new BufferedWriter(writer);
 
