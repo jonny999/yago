@@ -12,6 +12,9 @@ public class Names {
 	private String language;
 	private String name;
 
+	public Names() {
+	}
+	
 	public Names(String name) {
 		this.setExpression(name);
 		Matcher m = PATTERN_NAME.matcher(name);

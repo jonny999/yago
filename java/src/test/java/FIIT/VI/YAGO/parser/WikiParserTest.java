@@ -11,18 +11,34 @@ import org.junit.Before;
 import org.junit.Test;
 
 import FIIT.VI.YAGO.domain.Article;
+import FIIT.VI.YAGO.reader.CategoryReader;
+import FIIT.VI.YAGO.reader.NamesReader;
 import FIIT.VI.YAGO.reader.WikiReader;
 
 public class WikiParserTest {
 
-	private final static String DATA = "src//resources//test//sample_yago_wiki.txt";
-	private WikiReader reader;
+	private final static String DATA_WIKI = "src//resources//test//sample_yago_wiki.txt";
+	private final static String DATA_CATEGORY = "src//resources//test//yagoTypes.txt";
+	private final static String DATA_NAME = "src//resources//test//yagoMultilingualInstanceLabels.txt";
+
+	private WikiReader wikiReader;
+	private NamesReader nameReader;
+	private CategoryReader categoryReader;
+	
+	
+	
 	private ObjectMapper mapper = new ObjectMapper();
 
 	@Before
 	public void setup() throws IOException {
-		reader = new WikiReader(DATA);
-		WikiParser.createBaseWikiArticles("src//resources//test//wiki//", reader);
+		wikiReader = new WikiReader(DATA_WIKI);
+		nameReader = new NamesReader(DATA_NAME);
+		categoryReader = new CategoryReader(DATA_CATEGORY);
+		String path = "src//resources//test//wiki//";
+		
+		WikiParser.createBaseWikiArticles(path, wikiReader);
+		WikiParser.updateBaseWikiArticlesAlternativeNames(path, nameReader);
+		WikiParser.updateBaseWikiArticlesCategories(path, categoryReader);
 	}
 
 	@Test
