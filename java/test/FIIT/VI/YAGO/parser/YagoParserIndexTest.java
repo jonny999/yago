@@ -57,6 +57,7 @@ public class YagoParserIndexTest {
 
 		BooleanQuery query = new BooleanQuery();
 		QueryParser q1 = new QueryParser("subject", new StandardAnalyzer());
+		
 		query.add(q1.parse(searchString), Occur.SHOULD);
 
 		TopScoreDocCollector collector = TopScoreDocCollector.create(100, true);
@@ -83,6 +84,6 @@ public class YagoParserIndexTest {
 	public void searchIndexSecond() throws ParseException, IOException {
 
 		ScoreDoc[] hits = searchString("asasasas");
-		Assert.assertTrue(0 == hits.length);
+		assertEquals(0, hits.length);
 	}
 }

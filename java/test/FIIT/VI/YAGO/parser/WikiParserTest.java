@@ -11,6 +11,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import FIIT.VI.YAGO.domain.Article;
+import FIIT.VI.YAGO.parser.WikiParser;
 import FIIT.VI.YAGO.reader.CategoryReader;
 import FIIT.VI.YAGO.reader.NamesReader;
 import FIIT.VI.YAGO.reader.WikiReader;
