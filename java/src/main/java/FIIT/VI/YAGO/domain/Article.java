@@ -101,6 +101,12 @@ public class Article {
 
 		return categories;
 	}
+	
+	
+	public void processCategory(String category){
+		String parseCategory = category.replaceAll("_", " ");
+		this.getCategories().add(parseCategory);
+	}
 
 	public void setCategories(List<String> categories) {
 		this.categories = categories;

@@ -38,13 +38,12 @@ public class CategoryReaderTest {
 		reader.reload();
 		Article a = reader.readArticle();
 		Assert.assertEquals("Puyi", a.getName());
-		Assert.assertEquals(5, a.getCategories().size());
+		Assert.assertEquals(4, a.getCategories().size());
 
-		String[] categories = new String[] { "wikicategory_Manchu_people",
-				"wordnet_sovereign_110628644",
-				"wikicategory_People_of_the_Xinhai_Revolution",
-				"wikicategory_People_of_Manchukuo",
-				"wikicategory_Child_rulers_from_Asia" };
+		String[] categories = new String[] { "Manchu people",
+				"People of the Xinhai Revolution",
+				"People of Manchukuo",
+				"Child rulers from Asia" };
 		for (int i = 0; i < a.getCategories().size(); i++) {
 			Assert.assertEquals(categories[i], a.getCategories().get(i));
 		}
@@ -59,11 +58,11 @@ public class CategoryReaderTest {
 		Assert.assertEquals(5, a.getCategories().size());
 
 		String[] categories = new String[] {
-				"wikicategory_American_people_of_French_descent",
-				"wikicategory_People_from_Crowley,_Louisiana",
-				"wikicategory_Cajun_people",
-				"wikicategory_People_from_Avoyelles_Parish,_Louisiana",
-				"wikicategory_Living_people" };
+				"American people of French descent",
+				"People from Crowley, Louisiana",
+				"Cajun people",
+				"People from Avoyelles Parish, Louisiana",
+				"Living people" };
 		for (int i = 0; i < a.getCategories().size(); i++) {
 			Assert.assertEquals(categories[i], a.getCategories().get(i));
 		}
