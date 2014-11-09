@@ -44,7 +44,7 @@ public class WikiIndexTest {
 
 	@Test
 	public void testRam() throws IOException, ParseException {
-		List<Document> docs = ramFolder.searchIndex("Kid Rock");
+		List<Document> docs = ramFolder.searchIndex("Living people");
 		assertFalse(docs.size() == 0);
 	}
 

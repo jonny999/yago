@@ -60,30 +60,30 @@ public class Article {
 
 	public String toJson() throws JsonGenerationException,
 			JsonMappingException, IOException {
-		return mapper.writeValueAsString(this);
+
+		return mapper.writerWithDefaultPrettyPrinter().writeValueAsString(this);
 	}
-	
-	public Document document(){
+
+	public Document document() {
 		Document doc = new Document();
 
 		doc.add(new TextField("name", name, Field.Store.YES));
 		doc.add(new TextField("ulrWikipedia", ulrWikipedia, Field.Store.YES));
 
-		for(String category : this.getCategories()){
+		for (String category : this.getCategories()) {
 			doc.add(new TextField("category", category, Field.Store.YES));
 		}
-		
-		for(String link:this.getLinksTo()){
+
+		for (String link : this.getLinksTo()) {
 			doc.add(new TextField("link", link, Field.Store.YES));
 		}
-		
-		for(Names name: this.getNames()){
+
+		for (Names name : this.getNames()) {
 			doc.add(new TextField("name", name.getName(), Field.Store.YES));
 		}
-		
+
 		return doc;
 	}
-	
 
 	public String toAlternativesNames() {
 		StringBuilder builder = new StringBuilder();
@@ -95,7 +95,7 @@ public class Article {
 		builder.append("\n");
 		return builder.toString();
 	}
-	
+
 	public String toCategoriesNames() {
 		StringBuilder builder = new StringBuilder();
 		builder.append(this.getName());
@@ -126,9 +126,8 @@ public class Article {
 
 		return categories;
 	}
-	
-	
-	public void processCategory(String category){
+
+	public void processCategory(String category) {
 		String parseCategory = category.replaceAll("_", " ");
 		this.getCategories().add(parseCategory);
 	}
