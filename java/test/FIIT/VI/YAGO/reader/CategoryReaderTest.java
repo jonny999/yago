@@ -10,7 +10,7 @@ import FIIT.VI.YAGO.domain.Article;
 
 public class CategoryReaderTest {
 
-	private final static String DATA = "src//resources//test//yagoTypes.txt";
+	private final static String DATA = "..//data//sample_yago_types.txt";
 	private CategoryReader reader;
 
 	@Before

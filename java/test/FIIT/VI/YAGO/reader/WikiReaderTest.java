@@ -10,7 +10,7 @@ import FIIT.VI.YAGO.domain.Article;
 
 public class WikiReaderTest {
 
-	private final static String DATA = "src//resources//test//sample_yago_wiki.txt";
+	private final static String DATA = "..//data//sample_yagoWikipediaInfo.txt";
 	private WikiReader reader;
 
 	@Before
@@ -21,7 +21,7 @@ public class WikiReaderTest {
 	@Test
 	public void countLines() throws IOException {
 		long size = reader.linesCount();
-		Assert.assertEquals(84, size);
+		Assert.assertEquals(102, size);
 	}
 
 	@Test

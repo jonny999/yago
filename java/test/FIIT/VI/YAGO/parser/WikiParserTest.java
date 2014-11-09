@@ -18,9 +18,9 @@ import FIIT.VI.YAGO.reader.WikiReader;
 
 public class WikiParserTest {
 
-	private final static String DATA_WIKI = "src//resources//test//sample_yago_wiki.txt";
-	private final static String DATA_CATEGORY = "src//resources//test//yagoTypes.txt";
-	private final static String DATA_NAME = "src//resources//test//yagoMultilingualInstanceLabels.txt";
+	private final static String DATA_WIKI = "..//data//sample_yagoWikipediaInfo.txt";
+	private final static String DATA_CATEGORY = "..//data//sample_yago_types.txt";
+	private final static String DATA_NAME = "..//data//sample_yagoMultilingualInstanceLabels.txt";
 
 	private WikiReader wikiReader;
 	private NamesReader nameReader;

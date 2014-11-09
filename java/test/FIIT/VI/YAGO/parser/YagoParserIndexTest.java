@@ -29,7 +29,7 @@ import org.junit.Test;
 
 public class YagoParserIndexTest {
 
-	private final static String TEST_DATA_NAME = "src//resources//test//sample_yago_wiki.txt";
+	private final static String TEST_DATA_NAME = "..//data//sample_yagoWikipediaInfo.txt";
 	private final static Charset ENCODING = StandardCharsets.UTF_8;
 	private final static String INDEX = "indexTest";
 	
