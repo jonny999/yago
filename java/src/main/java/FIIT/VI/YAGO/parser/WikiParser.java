@@ -51,10 +51,15 @@ public class WikiParser {
 		}
 	}
 
-	private static Article loadArticle(String name, String path)
+	
+	private static Article loadArticle(String name, String path) throws JsonParseException, JsonMappingException, IOException{
+		return loadArticle(path + name + ".json");
+	}
+	
+	public static Article loadArticle(String path)
 			throws JsonParseException, JsonMappingException, IOException {
 
-		File file = new File(path + name + ".json");
+		File file = new File(path);
 
 		if (!file.exists()) {
 			return null;

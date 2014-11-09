@@ -4,6 +4,9 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.lucene.document.Document;
+import org.apache.lucene.document.Field;
+import org.apache.lucene.document.TextField;
 import org.codehaus.jackson.JsonGenerationException;
 import org.codehaus.jackson.map.JsonMappingException;
 import org.codehaus.jackson.map.ObjectMapper;
@@ -59,6 +62,28 @@ public class Article {
 			JsonMappingException, IOException {
 		return mapper.writeValueAsString(this);
 	}
+	
+	public Document document(){
+		Document doc = new Document();
+
+		doc.add(new TextField("name", name, Field.Store.YES));
+		doc.add(new TextField("ulrWikipedia", ulrWikipedia, Field.Store.YES));
+
+		for(String category : this.getCategories()){
+			doc.add(new TextField("category", category, Field.Store.YES));
+		}
+		
+		for(String link:this.getLinksTo()){
+			doc.add(new TextField("link", link, Field.Store.YES));
+		}
+		
+		for(Names name: this.getNames()){
+			doc.add(new TextField("name", name.getName(), Field.Store.YES));
+		}
+		
+		return doc;
+	}
+	
 
 	public String toAlternativesNames() {
 		StringBuilder builder = new StringBuilder();
