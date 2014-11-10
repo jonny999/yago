@@ -10,7 +10,9 @@ import org.apache.lucene.document.TextField;
 import org.codehaus.jackson.JsonGenerationException;
 import org.codehaus.jackson.map.JsonMappingException;
 import org.codehaus.jackson.map.ObjectMapper;
+import org.codehaus.jackson.map.annotate.JsonSerialize;
 
+@JsonSerialize(include=JsonSerialize.Inclusion.NON_EMPTY)
 public class Article {
 
 	private static final ObjectMapper mapper = new ObjectMapper();
