@@ -20,6 +20,7 @@ public class Article {
 	private String name;
 	private String size;
 	private String ulrWikipedia;
+	private String urlAlternative;
 	private List<String> linksTo;
 	private List<Names> names;
 	private List<String> categories;
@@ -136,6 +137,14 @@ public class Article {
 
 	public void setCategories(List<String> categories) {
 		this.categories = categories;
+	}
+
+	public String getUrlAlternative() {
+		return urlAlternative;
+	}
+
+	public void setUrlAlternative(String urlAlternative) {
+		this.urlAlternative = urlAlternative;
 	}
 
 }
