@@ -1,256 +1,164 @@
 {
-	"name": "Puyi",
-	"size": "\"52954\"^^xsd:integer",
-	"ulrWikipedia": "http://en.wikipedia.org/wiki/Puyi",
-	"linksTo": 
-	[
-		"Hirohito",
-		"Zhou_Enlai"
-	],
-
-	"names": 
-	[
-		{
-			"expression": "\"بوئي\"@ar",
-			"language": "ar",
-			"name": "بوئي"
-		},
-
-		{
-			"expression": "\"Пу И\"@bg",
-			"language": "bg",
-			"name": "Пу И"
-		},
-
-		{
-			"expression": "\"Pu Yi\"@ca",
-			"language": "ca",
-			"name": "Pu Yi"
-		},
-
-		{
-			"expression": "\"Pchu I\"@cs",
-			"language": "cs",
-			"name": "Pchu I"
-		},
-
-		{
-			"expression": "\"Puyi\"@da",
-			"language": "da",
-			"name": "Puyi"
-		},
-
-		{
-			"expression": "\"Pu Yi\"@de",
-			"language": "de",
-			"name": "Pu Yi"
-		},
-
-		{
-			"expression": "\"Pu Yi\"@et",
-			"language": "et",
-			"name": "Pu Yi"
-		},
-
-		{
-			"expression": "\"Puyi\"@es",
-			"language": "es",
-			"name": "Puyi"
-		},
-
-		{
-			"expression": "\"Pu Yi\"@eo",
-			"language": "eo",
-			"name": "Pu Yi"
-		},
-
-		{
-			"expression": "\"پویی\"@fa",
-			"language": "fa",
-			"name": "پویی"
-		},
-
-		{
-			"expression": "\"Puyi\"@fr",
-			"language": "fr",
-			"name": "Puyi"
-		},
-
-		{
-			"expression": "\"Puyi\"@gl",
-			"language": "gl",
-			"name": "Puyi"
-		},
-
-		{
-			"expression": "\"푸이\"@ko",
-			"language": "ko",
-			"name": "푸이"
-		},
-
-		{
-			"expression": "\"Kaisar Xuantong\"@id",
-			"language": "id",
-			"name": "Kaisar Xuantong"
-		},
-
-		{
-			"expression": "\"Pu Yi\"@it",
-			"language": "it",
-			"name": "Pu Yi"
-		},
-
-		{
-			"expression": "\"הנרי פו-יי\"@he",
-			"language": "he",
-			"name": "הנרי פו-יי"
-		},
-
-		{
-			"expression": "\"Henry PuYi\"@jv",
-			"language": "jv",
-			"name": "Henry PuYi"
-		},
-
-		{
-			"expression": "\"პუი\"@ka",
-			"language": "ka",
-			"name": "პუი"
-		},
-
-		{
-			"expression": "\"Puyi\"@lt",
-			"language": "lt",
-			"name": "Puyi"
-		},
-
-		{
-			"expression": "\"Pu Ji\"@hu",
-			"language": "hu",
-			"name": "Pu Ji"
-		},
-
-		{
-			"expression": "\"फू-यी\"@mr",
-			"language": "mr",
-			"name": "फू-यी"
-		},
-
-		{
-			"expression": "\"Puyi\"@ms",
-			"language": "ms",
-			"name": "Puyi"
-		},
-
-		{
-			"expression": "\"Pu Yi\"@nl",
-			"language": "nl",
-			"name": "Pu Yi"
-		},
-
-		{
-			"expression": "\"愛新覚羅溥儀\"@ja",
-			"language": "ja",
-			"name": "愛新覚羅溥儀"
-		},
-
-		{
-			"expression": "\"Puyi\"@no",
-			"language": "no",
-			"name": "Puyi"
-		},
-
-		{
-			"expression": "\"Puyi\"@pl",
-			"language": "pl",
-			"name": "Puyi"
-		},
-
-		{
-			"expression": "\"Puyi\"@pt",
-			"language": "pt",
-			"name": "Puyi"
-		},
-
-		{
-			"expression": "\"Pu Yi\"@ro",
-			"language": "ro",
-			"name": "Pu Yi"
-		},
-
-		{
-			"expression": "\"Пу И\"@ru",
-			"language": "ru",
-			"name": "Пу И"
-		},
-
-		{
-			"expression": "\"Puyi\"@simple",
-			"language": "simple",
-			"name": "Puyi"
-		},
-
-		{
-			"expression": "\"Pu Yi\"@fi",
-			"language": "fi",
-			"name": "Pu Yi"
-		},
-
-		{
-			"expression": "\"Puyi\"@sv",
-			"language": "sv",
-			"name": "Puyi"
-		},
-
-		{
-			"expression": "\"Puyi\"@tl",
-			"language": "tl",
-			"name": "Puyi"
-		},
-
-		{
-			"expression": "\"จักรพรรดิผู่อี๋\"@th",
-			"language": "th",
-			"name": "จักรพรรดิผู่อี๋"
-		},
-
-		{
-			"expression": "\"Puyi\"@tr",
-			"language": "tr",
-			"name": "Puyi"
-		},
-
-		{
-			"expression": "\"Пу І\"@uk",
-			"language": "uk",
-			"name": "Пу І"
-		},
-
-		{
-			"expression": "\"Phổ Nghi\"@vi",
-			"language": "vi",
-			"name": "Phổ Nghi"
-		},
-
-		{
-			"expression": "\"溥儀\"@zh-yue",
-			"language": "zh-yue",
-			"name": "溥儀"
-		},
-
-		{
-			"expression": "\"溥仪\"@zh",
-			"language": "zh",
-			"name": "溥仪"
-		}
-	],
-
-	"categories": 
-	[
-		"wikicategory_Manchu_people",
-		"wordnet_sovereign_110628644",
-		"wikicategory_People_of_the_Xinhai_Revolution",
-		"wikicategory_People_of_Manchukuo",
-		"wikicategory_Child_rulers_from_Asia"
-	]
+  "name" : "Puyi",
+  "size" : "\"52954\"^^xsd:integer",
+  "ulrWikipedia" : "http://en.wikipedia.org/wiki/Puyi",
+  "linksTo" : [ "Hirohito", "Zhou_Enlai" ],
+  "names" : [ {
+    "expression" : "\"بوئي\"@ar",
+    "language" : "ar",
+    "name" : "بوئي"
+  }, {
+    "expression" : "\"Пу И\"@bg",
+    "language" : "bg",
+    "name" : "Пу И"
+  }, {
+    "expression" : "\"Pu Yi\"@ca",
+    "language" : "ca",
+    "name" : "Pu Yi"
+  }, {
+    "expression" : "\"Pchu I\"@cs",
+    "language" : "cs",
+    "name" : "Pchu I"
+  }, {
+    "expression" : "\"Puyi\"@da",
+    "language" : "da",
+    "name" : "Puyi"
+  }, {
+    "expression" : "\"Pu Yi\"@de",
+    "language" : "de",
+    "name" : "Pu Yi"
+  }, {
+    "expression" : "\"Pu Yi\"@et",
+    "language" : "et",
+    "name" : "Pu Yi"
+  }, {
+    "expression" : "\"Puyi\"@es",
+    "language" : "es",
+    "name" : "Puyi"
+  }, {
+    "expression" : "\"Pu Yi\"@eo",
+    "language" : "eo",
+    "name" : "Pu Yi"
+  }, {
+    "expression" : "\"پویی\"@fa",
+    "language" : "fa",
+    "name" : "پویی"
+  }, {
+    "expression" : "\"Puyi\"@fr",
+    "language" : "fr",
+    "name" : "Puyi"
+  }, {
+    "expression" : "\"Puyi\"@gl",
+    "language" : "gl",
+    "name" : "Puyi"
+  }, {
+    "expression" : "\"푸이\"@ko",
+    "language" : "ko",
+    "name" : "푸이"
+  }, {
+    "expression" : "\"Kaisar Xuantong\"@id",
+    "language" : "id",
+    "name" : "Kaisar Xuantong"
+  }, {
+    "expression" : "\"Pu Yi\"@it",
+    "language" : "it",
+    "name" : "Pu Yi"
+  }, {
+    "expression" : "\"הנרי פו-יי\"@he",
+    "language" : "he",
+    "name" : "הנרי פו-יי"
+  }, {
+    "expression" : "\"Henry PuYi\"@jv",
+    "language" : "jv",
+    "name" : "Henry PuYi"
+  }, {
+    "expression" : "\"პუი\"@ka",
+    "language" : "ka",
+    "name" : "პუი"
+  }, {
+    "expression" : "\"Puyi\"@lt",
+    "language" : "lt",
+    "name" : "Puyi"
+  }, {
+    "expression" : "\"Pu Ji\"@hu",
+    "language" : "hu",
+    "name" : "Pu Ji"
+  }, {
+    "expression" : "\"फू-यी\"@mr",
+    "language" : "mr",
+    "name" : "फू-यी"
+  }, {
+    "expression" : "\"Puyi\"@ms",
+    "language" : "ms",
+    "name" : "Puyi"
+  }, {
+    "expression" : "\"Pu Yi\"@nl",
+    "language" : "nl",
+    "name" : "Pu Yi"
+  }, {
+    "expression" : "\"愛新覚羅溥儀\"@ja",
+    "language" : "ja",
+    "name" : "愛新覚羅溥儀"
+  }, {
+    "expression" : "\"Puyi\"@no",
+    "language" : "no",
+    "name" : "Puyi"
+  }, {
+    "expression" : "\"Puyi\"@pl",
+    "language" : "pl",
+    "name" : "Puyi"
+  }, {
+    "expression" : "\"Puyi\"@pt",
+    "language" : "pt",
+    "name" : "Puyi"
+  }, {
+    "expression" : "\"Pu Yi\"@ro",
+    "language" : "ro",
+    "name" : "Pu Yi"
+  }, {
+    "expression" : "\"Пу И\"@ru",
+    "language" : "ru",
+    "name" : "Пу И"
+  }, {
+    "expression" : "\"Puyi\"@simple",
+    "language" : "simple",
+    "name" : "Puyi"
+  }, {
+    "expression" : "\"Pu Yi\"@fi",
+    "language" : "fi",
+    "name" : "Pu Yi"
+  }, {
+    "expression" : "\"Puyi\"@sv",
+    "language" : "sv",
+    "name" : "Puyi"
+  }, {
+    "expression" : "\"Puyi\"@tl",
+    "language" : "tl",
+    "name" : "Puyi"
+  }, {
+    "expression" : "\"จักรพรรดิผู่อี๋\"@th",
+    "language" : "th",
+    "name" : "จักรพรรดิผู่อี๋"
+  }, {
+    "expression" : "\"Puyi\"@tr",
+    "language" : "tr",
+    "name" : "Puyi"
+  }, {
+    "expression" : "\"Пу І\"@uk",
+    "language" : "uk",
+    "name" : "Пу І"
+  }, {
+    "expression" : "\"Phổ Nghi\"@vi",
+    "language" : "vi",
+    "name" : "Phổ Nghi"
+  }, {
+    "expression" : "\"溥儀\"@zh-yue",
+    "language" : "zh-yue",
+    "name" : "溥儀"
+  }, {
+    "expression" : "\"溥仪\"@zh",
+    "language" : "zh",
+    "name" : "溥仪"
+  } ],
+  "categories" : [ "Manchu people", "People of the Xinhai Revolution", "People of Manchukuo", "Child rulers from Asia" ]
 }
