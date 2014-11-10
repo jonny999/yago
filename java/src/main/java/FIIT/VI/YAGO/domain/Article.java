@@ -12,13 +12,14 @@ import org.codehaus.jackson.map.JsonMappingException;
 import org.codehaus.jackson.map.ObjectMapper;
 import org.codehaus.jackson.map.annotate.JsonSerialize;
 
-@JsonSerialize(include=JsonSerialize.Inclusion.NON_EMPTY)
+@JsonSerialize(include = JsonSerialize.Inclusion.NON_EMPTY)
 public class Article {
 
 	private static final ObjectMapper mapper = new ObjectMapper();
 
 	private String name;
 	private String size;
+	private String wikiName;
 	private String ulrWikipedia;
 	private String urlAlternative;
 	private List<String> linksTo;
@@ -27,6 +28,11 @@ public class Article {
 
 	public String getName() {
 		return name;
+	}
+
+	public void parseName(String name) {
+		this.setName(name);
+		this.setWikiName(name.replaceAll("_", " "));
 	}
 
 	public void setName(String name) {
@@ -145,6 +151,14 @@ public class Article {
 
 	public void setUrlAlternative(String urlAlternative) {
 		this.urlAlternative = urlAlternative;
+	}
+
+	public String getWikiName() {
+		return wikiName;
+	}
+
+	public void setWikiName(String wikiName) {
+		this.wikiName = wikiName;
 	}
 
 }

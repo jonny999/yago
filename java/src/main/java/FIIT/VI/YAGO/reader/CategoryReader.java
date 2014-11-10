@@ -31,7 +31,7 @@ public class CategoryReader extends Reader {
 
 		if (line != null && isCategory()) {
 			RDFTriplet triplet = toRDF();
-			article.setName(triplet.getSubject());
+			article.parseName(triplet.getSubject());
 			searchString = triplet.getSubject();
 			found = true;
 			article.processCategory((triplet.getObject()));
@@ -42,7 +42,7 @@ public class CategoryReader extends Reader {
 			if (!found && isCategory()) {
 
 				RDFTriplet triplet = toRDF();
-				article.setName(triplet.getSubject());
+				article.parseName(triplet.getSubject());
 				searchString = triplet.getSubject();
 				found = true;
 				article.processCategory((triplet.getObject()));

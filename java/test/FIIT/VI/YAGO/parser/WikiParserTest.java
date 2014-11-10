@@ -54,7 +54,7 @@ public class WikiParserTest {
 		Assert.assertEquals("Amitabh_Bachchan", a.getName());
 		Assert.assertEquals("http://en.wikipedia.org/wiki/Amitabh_Bachchan",
 				a.getUlrWikipedia());
-		String[] linksTo = new String[] { "Satyajit_Ray" };
+		String[] linksTo = new String[] { "Satyajit Ray" };
 
 		for (int i = 0; i < linksTo.length; i++) {
 			Assert.assertEquals(linksTo[i], a.getLinksTo().get(i));

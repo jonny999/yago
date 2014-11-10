@@ -41,7 +41,7 @@ public class WikiReaderTest {
 		Assert.assertEquals("Puyi", a.getName());
 		Assert.assertEquals("http://en.wikipedia.org/wiki/Puyi",
 				a.getUlrWikipedia());
-		String[] linksTo = new String[] { "Hirohito", "Zhou_Enlai" };
+		String[] linksTo = new String[] { "Hirohito", "Zhou Enlai" };
 
 		for (int i = 0; i < linksTo.length; i++) {
 			Assert.assertEquals(linksTo[i], a.getLinksTo().get(i));

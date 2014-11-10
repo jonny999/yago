@@ -5,6 +5,7 @@ import java.util.regex.Pattern;
 
 import FIIT.VI.YAGO.domain.Article;
 import FIIT.VI.YAGO.domain.RDFTriplet;
+import FIIT.VI.YAGO.parser.helper.Replacer;
 
 public class WikiReader extends Reader {
 
@@ -28,20 +29,20 @@ public class WikiReader extends Reader {
 		Article article = new Article();
 		boolean found = false;
 
-		if(line!=null && isWikiArticle()){
+		if (line != null && isWikiArticle()) {
 			RDFTriplet triplet = toRDF();
-			article.setName(triplet.getSubject());
+			article.parseName(triplet.getSubject());
 			article.setSize(triplet.getObject());
-			found=true;
+			found = true;
 		}
-		
+
 		while ((line = this.readline()) != null) {
 
 			if (!found && isWikiArticle()) {
 				RDFTriplet triplet = toRDF();
-				article.setName(triplet.getSubject());
+				article.parseName(triplet.getSubject());
 				article.setSize(triplet.getObject());
-				found=true;
+				found = true;
 			} else if (found) {
 
 				if (isWikiArticle()) {
@@ -52,7 +53,8 @@ public class WikiReader extends Reader {
 				} else if (isWikiLink()) {
 
 					RDFTriplet triplet = toRDF();
-					article.getLinksTo().add(triplet.getObject());
+					article.getLinksTo().add(
+							Replacer.replaceCharacter(triplet.getObject()));
 				}
 			}
 		}
