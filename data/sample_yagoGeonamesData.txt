@@ -1,0 +1,67 @@
+# This file is part of the ontology YAGO2s
+# It is licensed under a Creative-Commons Attribution License by the YAGO team
+# at the Max Planck Institute for Informatics/Germany.
+# See http://yago-knowledge.org for all details.
+# This file was generated on 2012-11-09 T 17:49:13.0328.
+# 
+# 
+# Data from GeoNames, e.g. coordinates, alternative names, locatedIn hierarchy, neighbor of
+# GEONAMES
+
+@base <http://yago-knowledge.org/resource/> .
+@prefix dbp: <http://dbpedia.org/ontology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<London_Reefs>  <hasLatitude>   "8.85"^^<degrees> .
+<London_Reefs>  <hasLongitude>  "112.53333"^^<degrees> .
+<London_Reefs>  rdfs:subClassOf <geoclass_reefs> .
+<London_Reefs>  <hasGeonamesEntityId>   "1879967" .
+<London_Reefs>  rdfs:label      "Recif Ouest du London" .
+<London_Reefs>  rdfs:label      "Recifs London" .
+<London_Reefs>  rdfs:label      "Récif Ouest du London" .
+<London_Reefs>  rdfs:label      "Récifs London" .
+<London_Reefs>  rdfs:label      "Yin-ch'ing Ch'un-chiao" .
+<London_Reefs>  rdfs:label      "Yinqing Qunjiao" .
+<Peru-Chile_Trench>     <hasLatitude>   "-26.00005"^^<degrees> .
+<Peru-Chile_Trench>     <hasLongitude>  "-73.99997"^^<degrees> .
+<Peru-Chile_Trench>     rdfs:subClassOf <geoclass_trench> .
+<Peru-Chile_Trench>     <hasGeonamesEntityId>   "6363106" .
+<Peru-Chile_Trench>     rdfs:label      "Arica Trench" .
+<Peru-Chile_Trench>     rdfs:label      "Atacama Graben" .
+<Peru-Chile_Trench>     rdfs:label      "Atacama Trench" .
+<Peru-Chile_Trench>     rdfs:label      "Atakamskij Zhelob" .
+<Peru-Chile_Trench>     rdfs:label      "Atakamskiy Zhelob" .
+<Peru-Chile_Trench>     rdfs:label      "Chile Trench" .
+<Peru-Chile_Trench>     rdfs:label      "Chile-Peru Trench" .
+<Peru-Chile_Trench>     rdfs:label      "Peruansko-Chilijskij Zhelob" .
+<Peru-Chile_Trench>     rdfs:label      "Peruansko-Chiliyskiy Zhelob" .
+<Peru-Chile_Trench>     rdfs:label      "South American Trench" .
+<Peru-Chile_Trench>     rdfs:label      "Атакамский Желоб" .
+<Peru-Chile_Trench>     rdfs:label      "Перуанско-Чилийский Желоб" .
+<Nishi_Kaitoku_Seamount>        <hasLatitude>   "25.89996"^^<degrees> .
+<Nishi_Kaitoku_Seamount>        <hasLongitude>  "139.80006"^^<degrees> .
+<Nishi_Kaitoku_Seamount>        rdfs:subClassOf <geoclass_seamount> .
+<Nishi_Kaitoku_Seamount>        <hasGeonamesEntityId>   "6698751" .
+<Nishi_Kaitoku_Seamount>        rdfs:label      "Nishikaitoku-kaizan" .
+<Nishi_Kaitoku_Seamount>        rdfs:label      "Nisi-Kaitoku Seamount" .
+<Nishi_Kaitoku_Seamount>        rdfs:label      "xi hai de hai shan" .
+<Nishi_Kaitoku_Seamount>        rdfs:label      "西海徳海山" .
+<Jenkins_Canyon>        <hasLatitude>   "-62.44994"^^<degrees> .
+<Jenkins_Canyon>        <hasLongitude>  "-61.19998"^^<degrees> .
+<Jenkins_Canyon>        rdfs:subClassOf <geoclass_canyon> .
+<Jenkins_Canyon>        <hasGeonamesEntityId>   "6821057" .
+<Demer_Canyon>  <hasLatitude>   "-62.33328"^^<degrees> .
+<Demer_Canyon>  <hasLongitude>  "-60.63337"^^<degrees> .
+<Demer_Canyon>  rdfs:subClassOf <geoclass_canyon> .
+<Demer_Canyon>  <hasGeonamesEntityId>   "6821058" .
+<Anyongbok_Seamount>    <hasLatitude>   "37.49989"^^<degrees> .
+<Anyongbok_Seamount>    <hasLongitude>  "131.34985"^^<degrees> .
+<Anyongbok_Seamount>    rdfs:subClassOf <geoclass_seamount> .
+<Anyongbok_Seamount>    <hasGeonamesEntityId>   "6822232" .
+<Anyongbok_Seamount>    rdfs:label      "Anyongbok-haesan" .
+<Anyongbok_Seamount>    rdfs:label      "an-yongboghaesan" .
+

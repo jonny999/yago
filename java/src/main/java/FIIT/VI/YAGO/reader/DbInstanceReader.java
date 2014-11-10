@@ -9,7 +9,7 @@ import FIIT.VI.YAGO.domain.RDFTriplet;
 public class DbInstanceReader extends Reader {
 
 	private static final String DB_INSTANCE_RDF = "<(.*)>\t(owl:sameAs)\t<(.*)>";
-	protected static final Pattern READER_PATTERN_RDF = Pattern
+	private static final Pattern READER_PATTERN_RDF = Pattern
 			.compile(DB_INSTANCE_RDF);
 
 	public DbInstanceReader() throws IOException {
