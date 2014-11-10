@@ -1,31 +1,93 @@
 {
-  "name" : "Edwin_Edwards",
-  "size" : "\"48458\"^^xsd:integer",
-  "ulrWikipedia" : "http://en.wikipedia.org/wiki/Edwin_Edwards",
+  "name" : "Kid_Rock",
+  "size" : "\"55917\"^^xsd:integer",
+  "ulrWikipedia" : "http://en.wikipedia.org/wiki/Kid_Rock",
+  "urlAlternative" : "http://dbpedia.org/resource/Kid_Rock",
+  "linksTo" : [ "Jennifer_Lopez" ],
   "names" : [ {
-    "expression" : "\"Edwin Edwards\"@cs",
+    "expression" : "\"Кид Рок\"@bg",
+    "language" : "bg",
+    "name" : "Кид Рок"
+  }, {
+    "expression" : "\"Kid Rock\"@cs",
     "language" : "cs",
-    "name" : "Edwin Edwards"
+    "name" : "Kid Rock"
   }, {
-    "expression" : "\"Edwin Edwards\"@de",
+    "expression" : "\"Kid Rock\"@da",
+    "language" : "da",
+    "name" : "Kid Rock"
+  }, {
+    "expression" : "\"Kid Rock\"@de",
     "language" : "de",
-    "name" : "Edwin Edwards"
+    "name" : "Kid Rock"
   }, {
-    "expression" : "\"Edwin Edwards\"@fr",
+    "expression" : "\"Kid Rock\"@es",
+    "language" : "es",
+    "name" : "Kid Rock"
+  }, {
+    "expression" : "\"کید راک\"@fa",
+    "language" : "fa",
+    "name" : "کید راک"
+  }, {
+    "expression" : "\"Kid Rock\"@fr",
     "language" : "fr",
-    "name" : "Edwin Edwards"
+    "name" : "Kid Rock"
   }, {
-    "expression" : "\"Edwin Washington Edwards\"@la",
-    "language" : "la",
-    "name" : "Edwin Washington Edwards"
+    "expression" : "\"Kid Rock\"@it",
+    "language" : "it",
+    "name" : "Kid Rock"
   }, {
-    "expression" : "\"Edwin Edwards\"@pt",
+    "expression" : "\"Kid Rock\"@lv",
+    "language" : "lv",
+    "name" : "Kid Rock"
+  }, {
+    "expression" : "\"Kid Rock\"@nl",
+    "language" : "nl",
+    "name" : "Kid Rock"
+  }, {
+    "expression" : "\"キッド・ロック\"@ja",
+    "language" : "ja",
+    "name" : "キッド・ロック"
+  }, {
+    "expression" : "\"Kid Rock\"@no",
+    "language" : "no",
+    "name" : "Kid Rock"
+  }, {
+    "expression" : "\"Kid Rock\"@pl",
+    "language" : "pl",
+    "name" : "Kid Rock"
+  }, {
+    "expression" : "\"Kid Rock\"@pt",
     "language" : "pt",
-    "name" : "Edwin Edwards"
+    "name" : "Kid Rock"
   }, {
-    "expression" : "\"Едвін Едвардс\"@uk",
-    "language" : "uk",
-    "name" : "Едвін Едвардс"
+    "expression" : "\"Кид Рок\"@ru",
+    "language" : "ru",
+    "name" : "Кид Рок"
+  }, {
+    "expression" : "\"Kid Rock\"@simple",
+    "language" : "simple",
+    "name" : "Kid Rock"
+  }, {
+    "expression" : "\"Kid Rock\"@sk",
+    "language" : "sk",
+    "name" : "Kid Rock"
+  }, {
+    "expression" : "\"Kid Rock\"@fi",
+    "language" : "fi",
+    "name" : "Kid Rock"
+  }, {
+    "expression" : "\"Kid Rock\"@sv",
+    "language" : "sv",
+    "name" : "Kid Rock"
+  }, {
+    "expression" : "\"คิด ร็อก\"@th",
+    "language" : "th",
+    "name" : "คิด ร็อก"
+  }, {
+    "expression" : "\"Kid Rock\"@tr",
+    "language" : "tr",
+    "name" : "Kid Rock"
   } ],
-  "categories" : [ "American people of French descent", "People from Crowley, Louisiana", "Cajun people", "People from Avoyelles Parish, Louisiana", "Living people" ]
+  "categories" : [ "Rap rock musicians", "People from Macomb County, Michigan", "Living people" ]
 }
