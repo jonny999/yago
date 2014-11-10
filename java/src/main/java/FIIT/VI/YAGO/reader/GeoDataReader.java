@@ -36,7 +36,7 @@ public class GeoDataReader extends Reader {
 		if (line != null && isLatitude()) {
 			RDFTriplet triplet = toRDF(LATITUDE_RDF_PATTERN);
 			geoData.setName(triplet.getSubject());
-			geoData.setLatitude(triplet.getObject());
+			geoData.parseLatitude(triplet.getObject());
 			found = true;
 		}
 
@@ -45,7 +45,7 @@ public class GeoDataReader extends Reader {
 			if (!found && isLatitude()) {
 				RDFTriplet triplet = toRDF(LATITUDE_RDF_PATTERN);
 				geoData.setName(triplet.getSubject());
-				geoData.setLatitude(triplet.getObject());
+				geoData.parseLatitude(triplet.getObject());
 				found = true;
 			} else if (found) {
 
@@ -53,7 +53,7 @@ public class GeoDataReader extends Reader {
 					break;
 				} else if (isLongitude()) {
 					RDFTriplet triplet = toRDF(LONGITUDE_RDF_PATTERN);
-					geoData.setLongitude(triplet.getObject());
+					geoData.parseLongitude(triplet.getObject());
 				} else if (isLabel()) {
 
 					RDFTriplet triplet = toRDF(LABEL_RDF_PATTERN);

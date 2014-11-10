@@ -31,6 +31,14 @@ public class GeoData {
 		return latitude;
 	}
 
+	public void parseLatitude(String latitude) {
+		this.setLatitude(latitude.replaceAll("\"", ""));
+	}
+
+	public void parseLongitude(String longitude) {
+		this.setLongitude(longitude.replaceAll("\"", ""));
+	}
+
 	public void setLatitude(String latitude) {
 		this.latitude = latitude;
 	}
