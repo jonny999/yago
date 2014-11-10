@@ -1,9 +1,9 @@
 {
   "name" : "Kid_Rock",
   "size" : "\"55917\"^^xsd:integer",
+  "wikiName" : "Kid Rock",
   "ulrWikipedia" : "http://en.wikipedia.org/wiki/Kid_Rock",
-  "urlAlternative" : "http://dbpedia.org/resource/Kid_Rock",
-  "linksTo" : [ "Jennifer_Lopez" ],
+  "linksTo" : [ "Jennifer Lopez" ],
   "names" : [ {
     "expression" : "\"Кид Рок\"@bg",
     "language" : "bg",
