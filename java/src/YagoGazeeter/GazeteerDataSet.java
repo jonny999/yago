@@ -3,26 +3,28 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package YagoGazeeterParser;
-
+package yagoTypesParser;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Set;
-
 /**
  *
  * @author Jonny999
  */
 public class GazeteerDataSet {
-    private  List<GazeteerClass> classes;
+    private  List<GazeteerClass> yagoClasses;
     private  HashMap<String, Integer> classMap;
-    private static int itemCount = -1;
+    private  HashMap<String, Integer> titleMap;
+    
+    private  int itemCount;
   //Constructors. 
     
     public GazeteerDataSet(){
-        classMap = new HashMap<>();
-        classes = new ArrayList<>();
+        this.classMap = new HashMap<>();
+        this.titleMap = new HashMap<>();
+        this.yagoClasses = new ArrayList<>();
+        this.itemCount = -1;
     }
     
   //Public methods.
@@ -31,7 +33,7 @@ public class GazeteerDataSet {
      GazeteerClass currClass = this.getGazeteerClass(className);
         if (null == currClass) {
             Integer key;
-            int count = classes.size();
+            int count = this.yagoClasses.size();
             
             if(count == 0 ){
                 count = 1;
@@ -40,25 +42,27 @@ public class GazeteerDataSet {
             currClass = new GazeteerClass(className);
             
             key = count-1;
-            classMap.put(className,key); 
-            classes.add(currClass);
+            this.classMap.put(className,key); 
+            this.yagoClasses.add(currClass);
         }
        
         currClass.addItem(itemName);
     }
     
     public GazeteerClass getGazeteerClass(String className){
-        Integer index =  classMap.get(className);
-        
-        if(index == null){
-            return null;
+        Integer index =  this.classMap.get(className);
+        if (index != null) {
+            return this.yagoClasses.get(index);
         }
-        
-        return this.classes.get(index);
+        return null;
     }
-
+    public Integer getTitleId(String title){
+        Integer id = this.titleMap.get(title);
+        
+        return id;
+    }
     public List<GazeteerClass> getClasses() {
-        return classes;
+        return this.yagoClasses;
     }
     
     public Set<String> getAllClassNames(){
@@ -66,15 +70,15 @@ public class GazeteerDataSet {
     }
     
     public int getClassesCount(){
-        return classes.size();
+        return this.yagoClasses.size();
     }
     
-    public int getItemCount(){
+    public int getYagoClassesCount(){
        
-       if(itemCount == -1){
-           itemCount = 0;
-           for (GazeteerClass item : this.classes) {
-               itemCount += item.getItems().size();
+       if(this.itemCount == -1){
+           this.itemCount = 0;
+           for (GazeteerClass item : this.yagoClasses) {
+               this.itemCount += item.getItems().size();
            }
        }
        

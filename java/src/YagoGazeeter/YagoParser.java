@@ -3,8 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package YagoGazeeterParser;
-
+package yagoTypesParser;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.FileNotFoundException;
@@ -13,47 +12,42 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-
 /**
  *
  * @author Jonny999
  */
-public class YAGOParser {
-
-    private YAGOParser() {
+public class YagoParser {
+    private GazeteerDataSet gazeteerDataSet;
+     private YagoParser() {
     }
 
-    public static YAGOParser getInstance() {
+    public static YagoParser getInstance() {
         return YAGOParserHolder.INSTANCE;
     }
 
     private static class YAGOParserHolder {
 
-        private static final YAGOParser INSTANCE = new YAGOParser();
+        private static final YagoParser INSTANCE = new YagoParser();
     }
-    private GazeteerDataSet gazeteerDataSet;
 
 //Public methods.
-    public void processNewFile(String path) {
-        gazeteerDataSet = new GazeteerDataSet();
+    public GazeteerDataSet parseFileOnPath(String path) {
+        this.gazeteerDataSet = new GazeteerDataSet();
 
         BufferedReader input = this.openYAGOFile(path);
         this.processFile(input);
         
-         try {
-        BufferedWriter out = new BufferedWriter(new FileWriter("../data/firstParsersOutput.txt"));
-             for (GazeteerClass gazClass: gazeteerDataSet.getClasses()) {
-                  out.write("Class title: " + gazClass.getName() + "\n");
-                 for (String title : gazClass.getItems()) {
-                     out.write("\t\tElement name: " + title + "\n");
-                 }
-             }
-            out.close();
-        } catch (IOException e) {}
-    }
-
-    public GazeteerDataSet getGazeteerDataSet() {
-        return gazeteerDataSet;
+         /*try {
+            try (BufferedWriter out = new BufferedWriter(new FileWriter("../data/firstParsersOutput.txt"))) {
+                for (GazeteerClass gazClass: this.gazeteerDataSet.getClasses()) {
+                    out.write("Class: " + gazClass.getName() + "\n");
+                    for (String title : gazClass.getItems()) {
+                        out.write("\t\t: " + title + "\n");
+                    }
+                }
+            }
+        } catch (IOException e) {}*/
+       return this.gazeteerDataSet;
     }
 
 //Private methods
@@ -64,7 +58,7 @@ public class YAGOParser {
             input = new BufferedReader(
                     new FileReader(path));
         } catch (FileNotFoundException ex) {
-            Logger.getLogger(YAGOParser.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(YagoParser.class.getName()).log(Level.SEVERE, null, ex);
         }
 
         return input;
@@ -86,7 +80,7 @@ public class YAGOParser {
                 lineStr = input.readLine();
             }
         } catch (IOException ex) {
-            Logger.getLogger(YAGOParser.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(YagoParser.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 
@@ -108,13 +102,13 @@ public class YAGOParser {
     //Clear String
     
     private String clearString(String part) {
-        String finalStr = part.replaceAll("[<>. ]|wikicategory_", "");
+        
+        String finalStr = part.replaceAll("[<>. ]|^[a-zA-Z0-9]*_", "");
         finalStr = finalStr.replaceAll("_", " ");
-
         if (finalStr.length() == 0) {
             finalStr = "N/A";
         }
 
-        return finalStr;
-    }
+        return finalStr.toLowerCase();
+    }   
 }
