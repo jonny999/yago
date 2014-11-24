@@ -15,8 +15,9 @@ public class GazeteerClass {
     private String name;
     private List<String> items;
 
+   
     //Constructors.
-
+    
     public GazeteerClass(String name) {
         this.items = new ArrayList<>();
         this.name = "N/A";

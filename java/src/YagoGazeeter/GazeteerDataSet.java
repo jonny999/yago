@@ -13,75 +13,82 @@ import java.util.Set;
  * @author Jonny999
  */
 public class GazeteerDataSet {
-    private  List<GazeteerClass> yagoClasses;
-    private  HashMap<String, Integer> classMap;
+    private  HashMap<String, GazeteerClass> classMap;
     private  HashMap<String, Integer> titleMap;
+    
+    private  HashMap<String, ArrayList<String>> nameMap;
     
     private  int itemCount;
   //Constructors. 
     
     public GazeteerDataSet(){
-        this.classMap = new HashMap<>();
-        this.titleMap = new HashMap<>();
-        this.yagoClasses = new ArrayList<>();
-        this.itemCount = -1;
+        this.classMap    = new HashMap<>();
+        this.titleMap    = new HashMap<>();
+        this.itemCount   = -1;
+        
+        this.nameMap     = new HashMap<>();
     }
     
   //Public methods.
     
     public void addGazeteerItem(String className, String itemName){
-     GazeteerClass currClass = this.getGazeteerClass(className);
-        if (null == currClass) {
-            Integer key;
-            int count = this.yagoClasses.size();
-            
-            if(count == 0 ){
-                count = 1;
-            }
-            
+     GazeteerClass currClass = this.classMap.get(className);
+        if (null == currClass) {            
             currClass = new GazeteerClass(className);
             
-            key = count-1;
-            this.classMap.put(className,key); 
-            this.yagoClasses.add(currClass);
+            this.classMap.put(className,currClass); 
+            this.getNameClasses(itemName).add(className);
         }
        
         currClass.addItem(itemName);
     }
     
-    public GazeteerClass getGazeteerClass(String className){
-        Integer index =  this.classMap.get(className);
-        if (index != null) {
-            return this.yagoClasses.get(index);
+    private ArrayList getNameClasses(String name){
+        ArrayList<String> result = this.nameMap.get(name);
+        
+        if(result == null){
+            result =  new ArrayList<>();
+            this.nameMap.put(name,result);
         }
-        return null;
+        
+        return result;
     }
     public Integer getTitleId(String title){
         Integer id = this.titleMap.get(title);
         
         return id;
     }
-    public List<GazeteerClass> getClasses() {
-        return this.yagoClasses;
-    }
     
-    public Set<String> getAllClassNames(){
+    public Set<String> getAllClassTitles(){
         return this.classMap.keySet();
     }
     
     public int getClassesCount(){
-        return this.yagoClasses.size();
+        return this.classMap.size();
     }
     
-    public int getYagoClassesCount(){
+    public int getYagoNameCount(){
        
        if(this.itemCount == -1){
+           GazeteerClass item;
            this.itemCount = 0;
-           for (GazeteerClass item : this.yagoClasses) {
+           for(String key : this.classMap.keySet()){
+               item = classMap.get(key);
                this.itemCount += item.getItems().size();
            }
        }
        
        return this.itemCount;
+    }
+
+    public HashMap<String, ArrayList<String>> getNameMap() {
+        return nameMap;
+    }
+    public List<GazeteerClass> getClasses(){
+            List<GazeteerClass> classes  = new ArrayList<>();
+            for(String key : this.classMap.keySet()){
+                classes.add(this.classMap.get(key));
+            }
+            return classes;
     }
 }

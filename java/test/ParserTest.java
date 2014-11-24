@@ -3,39 +3,38 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-import YagoGazeeterParser.GazeteerClass;
-import YagoGazeeterParser.GazeteerDataSet;
-import YagoGazeeterParser.YAGOParser;
 import java.util.List;
 import org.junit.Assert;
 import org.junit.Test;
+import yagoTypesParser.*;
 
 /**
  *
- * @author Jonny999
+ * @author janhandzus
  */
-public class SampleTest {
+public class ParserTest {
     
-    public SampleTest() {
+    public ParserTest() {
     }
-    
-    
+   
     // TODO add test methods here.
     // The methods must be annotated with annotation @Test. For example:
     //
+    // @Test
+    // public void hello() {}
      @Test
-     public void hello() {
-         YAGOParser parser = YAGOParser.getInstance();
+     public void ParserTest() {
+         YagoParser parser = YagoParser.getInstance();
          List<GazeteerClass> classes;
          GazeteerClass myGazClass;
-         parser.processNewFile("../data/sample_yagoTypes.txt");
-         GazeteerDataSet dataSet = parser.getGazeteerDataSet();
+         GazeteerDataSet dataSet = parser.parseTypesOnPath("../data/sample_yagoTypes.txt");
          
-         Assert.assertTrue(dataSet.getClassesCount()==36 && dataSet.getItemCount() == 42);
+         Assert.assertTrue(dataSet.getClassesCount()==36 && dataSet.getYagoNameCount()== 42);
          
          classes = dataSet.getClasses();
          myGazClass = classes.get(0);
-         Assert.assertEquals("Manchu people", myGazClass.getName());
+         
+         Assert.assertEquals("presidents of indonesia", myGazClass.getName());
         
      }
 }

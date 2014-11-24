@@ -5,13 +5,15 @@
  */
 package yagoTypesParser;
 import java.io.BufferedReader;
-import java.io.BufferedWriter;
+
 import java.io.FileNotFoundException;
 import java.io.FileReader;
-import java.io.FileWriter;
+
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 /**
  *
  * @author Jonny999
@@ -31,22 +33,12 @@ public class YagoParser {
     }
 
 //Public methods.
-    public GazeteerDataSet parseFileOnPath(String path) {
+    public GazeteerDataSet parseTypesOnPath(String path) {
         this.gazeteerDataSet = new GazeteerDataSet();
 
         BufferedReader input = this.openYAGOFile(path);
         this.processFile(input);
         
-         /*try {
-            try (BufferedWriter out = new BufferedWriter(new FileWriter("../data/firstParsersOutput.txt"))) {
-                for (GazeteerClass gazClass: this.gazeteerDataSet.getClasses()) {
-                    out.write("Class: " + gazClass.getName() + "\n");
-                    for (String title : gazClass.getItems()) {
-                        out.write("\t\t: " + title + "\n");
-                    }
-                }
-            }
-        } catch (IOException e) {}*/
        return this.gazeteerDataSet;
     }
 
@@ -76,7 +68,6 @@ public class YagoParser {
                 if ((lineStr.length() > 0) && ('<' == lineStr.charAt(0))) {
                     this.processLine(lineStr);
                 }
-
                 lineStr = input.readLine();
             }
         } catch (IOException ex) {
@@ -91,17 +82,27 @@ public class YagoParser {
 
         if (parts.length == 2) {
 
-            String className = this.clearString(parts[1]);
-            String itemName = this.clearString(parts[0]);
+            String className = this.cleanString(parts[1]);
+            String itemName = this.cleanString(parts[0]);
 
-            this.gazeteerDataSet.addGazeteerItem(className, itemName);
+            this.gazeteerDataSet.addGazeteerItem(className,itemName);
 
         }
     }
 
-    //Clear String
+    //Clean String
     
-    private String clearString(String part) {
+    private String cleanString(String part) {
+        
+        Pattern pattern;
+        pattern = Pattern.compile("<(.*)>.rdfs:label.*\"(.*)\"");
+        Matcher matcher = pattern.matcher(part);
+
+        if (matcher.find()) {
+            matcher.group(1);
+            matcher.group(2);
+        }
+        
         
         String finalStr = part.replaceAll("[<>. ]|^[a-zA-Z0-9]*_", "");
         finalStr = finalStr.replaceAll("_", " ");
