@@ -10,7 +10,7 @@ import FIIT.VI.YAGO.domain.Article;
 
 public class NamesReaderTest {
 
-	private final static String DATA = "src//resources//test//yagoMultilingualInstanceLabels.txt";
+	private final static String DATA = "..//data//sample_yagoMultilingualInstanceLabels.txt";
 	private NamesReader reader;
 
 	@Before

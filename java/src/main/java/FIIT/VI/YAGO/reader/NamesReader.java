@@ -26,7 +26,7 @@ public class NamesReader extends Reader {
 
 		if (line != null && isWikiLink()) {
 			RDFTriplet triplet = toRDF();
-			article.setName(triplet.getSubject());
+			article.parseName(triplet.getSubject());
 			searchString = triplet.getSubject();
 			found = true;
 			article.getNames().add(new Names(triplet.getObject()));
@@ -37,7 +37,7 @@ public class NamesReader extends Reader {
 			if (!found && isWikiLink()) {
 
 				RDFTriplet triplet = toRDF();
-				article.setName(triplet.getSubject());
+				article.parseName(triplet.getSubject());
 				searchString = triplet.getSubject();
 				found = true;
 				article.getNames().add(new Names(triplet.getObject()));
