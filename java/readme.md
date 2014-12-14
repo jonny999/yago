@@ -39,7 +39,6 @@ For details check package parser
 Run test with JUnit
 
 
-**Free Software, Hell Yeah!**
 [YAGO data]:http://www.mpi-inf.mpg.de/departments/databases-and-information-systems/research/yago-naga/yago/
 [Lucene]:http://oak.cs.ucla.edu/cs144/projects/lucene/
 [Gulp]:http://gulpjs.com
