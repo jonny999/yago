@@ -29,6 +29,10 @@ public class Article {
 	public String getName() {
 		return name;
 	}
+	
+	public String parseFilesName(){
+		return name.replaceAll("_", "").replaceAll("/", "");
+	}
 
 	public void parseName(String name) {
 		this.setName(name);

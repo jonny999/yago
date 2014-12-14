@@ -62,7 +62,8 @@ public class WikiIndex {
 		String pathToFile;
 
 		boolean tmp = (this.existIndex() && override) || (!this.existIndex());
-
+		int count =0;
+		
 		if (tmp) {
 
 			for (final File fileEntry : folder.listFiles()) {
@@ -80,6 +81,8 @@ public class WikiIndex {
 									.getAbsolutePath());
 
 							if (a != null) {
+								count++;
+								System.out.println(count);
 								writter.addDocument(a.document());
 							}
 						}

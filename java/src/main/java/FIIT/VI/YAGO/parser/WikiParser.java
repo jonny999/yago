@@ -25,7 +25,7 @@ public class WikiParser {
 		Article a;
 
 		while ((a = reader.readArticle()) != null) {
-			createOrUpdateAndSave(a.toJson(), a.getName(), path);
+			createOrUpdateAndSave(a.toJson(), a.parseFilesName(), path);
 		}
 	}
 
@@ -38,7 +38,7 @@ public class WikiParser {
 			update = loadArticle(a.getName(), path);
 			if (update != null) {
 				update.setCategories(a.getCategories());
-				createOrUpdateAndSave(update.toJson(), a.getName(), path);
+				createOrUpdateAndSave(update.toJson(), a.parseFilesName(), path);
 			}
 		}
 	}
@@ -53,7 +53,7 @@ public class WikiParser {
 			if (update != null) {
 
 				update.setNames(a.getNames());
-				createOrUpdateAndSave(update.toJson(), a.getName(), path);
+				createOrUpdateAndSave(update.toJson(), a.parseFilesName(), path);
 			}
 		}
 	}
@@ -68,7 +68,7 @@ public class WikiParser {
 			if (update != null) {
 
 				update.setUrlAlternative(triplet.getObject());
-				createOrUpdateAndSave(update.toJson(), update.getName(), path);
+				createOrUpdateAndSave(update.toJson(), update.parseFilesName(), path);
 			}
 		}
 	}
@@ -101,6 +101,8 @@ public class WikiParser {
 		BufferedWriter bw = new BufferedWriter(writer);
 
 		bw.write(json);
+		
 		bw.close();
+		
 	}
 }
