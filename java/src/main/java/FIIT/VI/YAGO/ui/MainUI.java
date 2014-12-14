@@ -8,6 +8,11 @@ import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
+/**
+ * Main user interface class 
+ * @author mm
+ *
+ */
 public class MainUI {
 
 	private JFrame frame;

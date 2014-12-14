@@ -7,6 +7,11 @@ import java.util.regex.Pattern;
 import FIIT.VI.YAGO.domain.GeoData;
 import FIIT.VI.YAGO.domain.RDFTriplet;
 
+/**
+ * Reader of geodates
+ * @author mm
+ *
+ */
 public class GeoDataReader extends Reader {
 
 	private static final String LATITUDE_RDF = "<(.*)> +<(hasLatitude)> +(.*)\\^\\^<degrees>";
@@ -28,6 +33,11 @@ public class GeoDataReader extends Reader {
 		initiliaze();
 	}
 
+	/**
+	 * Read geo data bases on REGEX rules
+	 * @return
+	 * @throws IOException
+	 */
 	public GeoData readGeoData() throws IOException {
 
 		GeoData geoData = new GeoData();

@@ -11,6 +11,11 @@ import org.apache.lucene.store.SimpleFSDirectory;
 
 import FIIT.VI.YAGO.index.WikiIndex;
 
+/**
+ * Main model 
+ * @author mm
+ *
+ */
 public class MainModel {
 
 	private WikiIndex indexFolder;
@@ -23,6 +28,11 @@ public class MainModel {
 		indexFolder = new WikiIndex(indexDirection);
 	}
 
+	/**
+	 * Service of search index
+	 * @param searchString search String
+	 * @return list of lucene documents
+	 */
 	public List<Document> searchIndex(String searchString) {
 		try {
 			return indexFolder.searchIndex(searchString);

@@ -8,6 +8,11 @@ import java.util.regex.Pattern;
 import FIIT.VI.YAGO.domain.Article;
 import FIIT.VI.YAGO.domain.RDFTriplet;
 
+/**
+ * Reader of wikipedia tags 
+ * @author mm
+ *
+ */
 public class CategoryReader extends Reader {
 
 	private static final String CATEGORY_RDF = "<(.*)>\t(.*)\t<wikicategory_(.*)\\b>";
@@ -23,6 +28,11 @@ public class CategoryReader extends Reader {
 		initiliaze();
 	}
 
+	/**
+	 * Read article based on REGEX rules
+	 * @return
+	 * @throws IOException
+	 */
 	public Article readArticle() throws IOException {
 
 		Article article = new Article();

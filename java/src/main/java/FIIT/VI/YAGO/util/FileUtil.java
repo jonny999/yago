@@ -8,11 +8,22 @@ import java.io.IOException;
 import FIIT.VI.YAGO.domain.Article;
 import FIIT.VI.YAGO.parser.WikiParser;
 
+/**
+ * Util class for work with files
+ * @author mm
+ *
+ */
 public final class FileUtil {
 
 	private FileUtil() {
 	}
 
+	/**
+	 * Connect files .json to one from folder
+	 * @param folder folder where search 
+	 * @param toFile results file
+	 * @throws IOException
+	 */
 	public static void createOneFile(final File folder, final String toFile)
 			throws IOException {
 
@@ -49,6 +60,13 @@ public final class FileUtil {
 
 	}
 
+	/**
+	 * Save or replace file with json
+	 * @param json data for input
+	 * @param parseFilesName name of output file 
+	 * @param path path where to save
+	 * @throws IOException
+	 */
 	public static void createOrUpdateAndSave(String json,
 			String parseFilesName, String path) throws IOException {
 		File file = new File(path + parseFilesName + ".json");

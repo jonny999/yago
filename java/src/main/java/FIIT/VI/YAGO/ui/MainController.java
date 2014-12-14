@@ -7,6 +7,11 @@ import java.util.List;
 
 import org.apache.lucene.document.Document;
 
+/**
+ * Main window controller
+ * @author mm
+ *
+ */
 public class MainController {
 
 	private MainUI ui;
@@ -18,11 +23,19 @@ public class MainController {
 		initilialize();
 	}
 
+	/**
+	 * UI setup
+	 */
 	private void initilialize() {
 		ui.getFrame().setVisible(true);
 		ui.addSearchLister(new SearchListener());
 	}
 
+	/**
+	 * Action listener for search
+	 * @author mm
+	 *
+	 */
 	private class SearchListener implements ActionListener {
 
 		public void actionPerformed(ActionEvent e) {
@@ -44,7 +57,7 @@ public class MainController {
 		
 		private List<String> getDocument(Document document){
 			List<String> docs = new ArrayList<String>();
-			docs.add(document.get("name")==null?"":document.get("name").replaceAll("_", ""));
+			docs.add(document.get("name")==null?"":document.get("name").replaceAll("_", " "));
 			docs.add(document.get("ulrWikipedia")==null?"":document.get("ulrWikipedia"));
 			
 			return docs;

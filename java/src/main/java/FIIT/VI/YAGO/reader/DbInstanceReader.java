@@ -6,6 +6,11 @@ import java.util.regex.Pattern;
 
 import FIIT.VI.YAGO.domain.RDFTriplet;
 
+/**
+ * Reader of db url for wikipedia
+ * @author mm
+ *
+ */
 public class DbInstanceReader extends Reader {
 
 	private static final String DB_INSTANCE_RDF = "<(.*)>\t(owl:sameAs)\t<(.*)>";
@@ -21,6 +26,11 @@ public class DbInstanceReader extends Reader {
 		initiliaze();
 	}
 
+	/**
+	 * Read articles based on REGEX rules
+	 * @return
+	 * @throws IOException
+	 */
 	public RDFTriplet readArticle() throws IOException {
 
 		RDFTriplet triplet = null;
