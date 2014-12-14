@@ -29,8 +29,8 @@ import FIIT.VI.YAGO.domain.Article;
 public class WikiIndex {
 
 	private final static List<String> SEARCH_VARIABLES = Arrays.asList("name",
-			"ulrWikipedia", "category", "link", "name");
-	private final static int COUNT = 100;
+			"ulrWikipedia", "category", "link", "wikiName");
+	private final static int COUNT = 10;
 
 	private Analyzer analyzer = new SimpleAnalyzer();
 	private Directory directory;
@@ -115,6 +115,10 @@ public class WikiIndex {
 		return documents;
 	}
 
+	public ScoreDoc[] searchScoreDoc(String search) throws ParseException, IOException{
+		return searchString(this.loadSearcher(),search,SEARCH_VARIABLES,COUNT);
+	}
+	
 	private ScoreDoc[] searchString(IndexSearcher searcher,
 			String searchString, List<String> where, int count)
 			throws ParseException, IOException {
