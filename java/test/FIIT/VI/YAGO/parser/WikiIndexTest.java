@@ -14,6 +14,8 @@ import org.apache.lucene.store.SimpleFSDirectory;
 import org.junit.Before;
 import org.junit.Test;
 
+import FIIT.VI.YAGO.index.WikiIndex;
+
 public class WikiIndexTest {
 
 	private WikiIndex indexFolder;

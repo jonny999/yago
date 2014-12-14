@@ -9,7 +9,7 @@ import org.apache.lucene.document.Document;
 import org.apache.lucene.queryparser.classic.ParseException;
 import org.apache.lucene.store.SimpleFSDirectory;
 
-import FIIT.VI.YAGO.parser.WikiIndex;
+import FIIT.VI.YAGO.index.WikiIndex;
 
 public class MainModel {
 

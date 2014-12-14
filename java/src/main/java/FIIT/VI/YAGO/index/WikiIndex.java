@@ -1,4 +1,4 @@
-package FIIT.VI.YAGO.parser;
+package FIIT.VI.YAGO.index;
 
 import java.io.File;
 import java.io.IOException;
@@ -25,6 +25,7 @@ import org.apache.lucene.util.Version;
 import org.junit.Assert;
 
 import FIIT.VI.YAGO.domain.Article;
+import FIIT.VI.YAGO.parser.WikiParser;
 
 public class WikiIndex {
 
