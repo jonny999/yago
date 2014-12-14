@@ -1,8 +1,6 @@
 package FIIT.VI.YAGO.parser;
 
-import java.io.BufferedWriter;
 import java.io.File;
-import java.io.FileWriter;
 import java.io.IOException;
 
 import org.codehaus.jackson.JsonParseException;
@@ -15,6 +13,7 @@ import FIIT.VI.YAGO.reader.CategoryReader;
 import FIIT.VI.YAGO.reader.DbInstanceReader;
 import FIIT.VI.YAGO.reader.NamesReader;
 import FIIT.VI.YAGO.reader.WikiReader;
+import FIIT.VI.YAGO.util.FileUtil;
 
 public class WikiParser {
 
@@ -68,7 +67,8 @@ public class WikiParser {
 			if (update != null) {
 
 				update.setUrlAlternative(triplet.getObject());
-				createOrUpdateAndSave(update.toJson(), update.parseFilesName(), path);
+				createOrUpdateAndSave(update.toJson(), update.parseFilesName(),
+						path);
 			}
 		}
 	}
@@ -92,17 +92,7 @@ public class WikiParser {
 
 	private static void createOrUpdateAndSave(String json, String name,
 			String path) throws IOException {
-		File file = new File(path + name + ".json");
+		FileUtil.createOrUpdateAndSave(json, name, path);
 
-		if (!file.exists()) {
-			file.createNewFile();
-		}
-		FileWriter writer = new FileWriter(file.getAbsolutePath());
-		BufferedWriter bw = new BufferedWriter(writer);
-
-		bw.write(json);
-		
-		bw.close();
-		
 	}
 }

@@ -49,4 +49,20 @@ public final class FileUtil {
 
 	}
 
+	public static void createOrUpdateAndSave(String json,
+			String parseFilesName, String path) throws IOException {
+		File file = new File(path + parseFilesName + ".json");
+
+		if (!file.exists()) {
+			file.createNewFile();
+		}
+		FileWriter writer = new FileWriter(file.getAbsolutePath());
+		BufferedWriter bw = new BufferedWriter(writer);
+
+		bw.write(json);
+		
+		bw.close();
+		
+	}
+
 }
