@@ -1,4 +1,4 @@
-package FIIT.VI.YAGO.parser.helper;
+package FIIT.VI.YAGO.util;
 
 public class Replacer {
 
