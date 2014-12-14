@@ -22,6 +22,10 @@ public class GeoData {
 	public String getName() {
 		return name;
 	}
+	
+	public String parseFilesName(){
+		return name.replaceAll("_", "").replaceAll("/", "");
+	}
 
 	public void setName(String name) {
 		this.name = name;
