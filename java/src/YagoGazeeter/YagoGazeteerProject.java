@@ -31,13 +31,13 @@ public class YagoGazeteerProject {
        parser.parseTypesOnPath("../data/yagoTypes.ttl");
        writeSecondTypesOutput(parser.getGazeteerDataSet());
         
-        //parser.parseAltNamesOnPath("../data/yagoTypes.ttl");
+        parser.parseAltNamesOnPath("../data/yagoMultilingualInstanceLabels.ttl");
         dataSet = parser.getGazeteerDataSet();
         //writeAltNamesOuput(dataSet);
         
         //Gazeteer test.
-        String input = "First documented in the 13th century, Berlin was the capital of the Kingdom of Prussia (1701–1918), the German Empire (1871–1918), the Weimar Republic (1919–33) and the Third Reich (1933–45). Berlin in the 1920s was the third largest municipality in the world. After World War II, the city became divided into East Berlin -- the capital of East Germany -- and West Berlin, a West German exclave surrounded by the Berlin Wall from 1961–89. Following German reunification in 1990, the city regained its status as the capital of Germany, hosting 147 foreign embassies.";
-                for(GazeteerClass item : dataSet.getClasses()){
+        String input = "The pace in 2014 was vastly different. This year's highlights were so above and beyond that without any discussion, we each picked seven of the same releases. Though I'm not going to divulge which ones they were, there was such a bounty of phenomenal albums released this year that the selection process was a joy. From John Dowland's elegant, elegiac and intimate pavanes, written at the dawn of the 17th century, to John (Coolidge) Adams' Saxophone Concerto and John Luther Adams' Become Ocean, both premiered just last year, the scope of what we loved reaches far and wide.";
+        for(GazeteerClass item : dataSet.getClasses()){
             classMap.put(key, item.getName());
             for(String name : item.getItems()){
                 gazetteer.insert(name, key);

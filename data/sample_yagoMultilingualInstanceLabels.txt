@@ -1,0 +1,110 @@
+{\rtf1\ansi\ansicpg1250\cocoartf1265\cocoasubrtf210
+{\fonttbl\f0\fmodern\fcharset0 Courier;}
+{\colortbl;\red255\green255\blue255;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720
+
+\f0\fs26 \cf0 \expnd0\expndtw0\kerning0
+# This file is part of the ontology YAGO2s\
+# It is licensed under a Creative-Commons Attribution License by the YAGO team\
+# at the Max Planck Institute for Informatics/Germany.\
+# See http://yago-knowledge.org for all details.\
+# This file was generated on 2012-10-08 T 16:11:55.0687.\
+# \
+# \
+# Names for the Wikipedia instances in multiple languages\
+# MULTILINGUAL\
+\
+@base <http://yago-knowledge.org/resource/> .\
+@prefix dbp: <http://dbpedia.org/ontology/> .\
+@prefix owl: <http://www.w3.org/2002/07/owl#> .\
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .\
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\
+\
+<Puyi>	rdfs:label	"\uc0\u344 \'a8\u366 \u136 \u344 \u346 \u366 \u138 "@ar .\
+<Puyi>	rdfs:label	"\uc0\u272 \u159 \u323 \u131  \u272 \u152 "@bg .\
+<Puyi>	rdfs:label	"Pu Yi"@ca .\
+<Puyi>	rdfs:label	"Pchu I"@cs .\
+<Puyi>	rdfs:label	"Puyi"@da .\
+<Puyi>	rdfs:label	"Pu Yi"@de .\
+<Puyi>	rdfs:label	"Pu Yi"@et .\
+<Puyi>	rdfs:label	"Puyi"@es .\
+<Puyi>	rdfs:label	"Pu Yi"@eo .\
+<Puyi>	rdfs:label	"\uc0\u366 \'9e\u366 \u136 \u368 \u140 \u368 \u140 "@fa .\
+<Puyi>	rdfs:label	"Puyi"@fr .\
+<Puyi>	rdfs:label	"Puyi"@gl .\
+<Puyi>	rdfs:label	"\'ed\uc0\u145 \'b8\u283 \u157 \'b4"@ko .\
+<Puyi>	rdfs:label	"Kaisar Xuantong"@id .\
+<Puyi>	rdfs:label	"Pu Yi"@it .\
+<Puyi>	rdfs:label	"\'d7\uc0\u148 \'d7\'a0\'d7\'a8\'d7\u153  \'d7\'a4\'d7\u149 -\'d7\u153 \'d7\u153 "@he .\
+<Puyi>	rdfs:label	"Henry PuYi"@jv .\
+<Puyi>	rdfs:label	"\'e1\uc0\u131 \u158 \'e1\u131 \u321 \'e1\u131 \u152 "@ka .\
+<Puyi>	rdfs:label	"Puyi"@lt .\
+<Puyi>	rdfs:label	"Pu Ji"@hu .\
+<Puyi>	rdfs:label	"\uc0\u341 \'a4\u356 \u341 \u317 \u130 -\u341 \'a4\u379 \u341 \u317 \u128 "@mr .\
+<Puyi>	rdfs:label	"Puyi"@ms .\
+<Puyi>	rdfs:label	"Pu Yi"@nl .\
+<Puyi>	rdfs:label	"\uc0\u263 \u132 \u155 \u263 \u150 \'b0\u269 \u346 \u154 \'e7\'9e\u133 \u263 \u351 \u317 \u314 \u132 \u128 "@ja .\
+<Puyi>	rdfs:label	"Puyi"@no .\
+<Puyi>	rdfs:label	"Puyi"@pl .\
+<Puyi>	rdfs:label	"Puyi"@pt .\
+<Puyi>	rdfs:label	"Pu Yi"@ro .\
+<Puyi>	rdfs:label	"\uc0\u272 \u159 \u323 \u131  \u272 \u152 "@ru .\
+<Puyi>	rdfs:label	"Puyi"@simple .\
+<Puyi>	rdfs:label	"Pu Yi"@fi .\
+<Puyi>	rdfs:label	"Puyi"@sv .\
+<Puyi>	rdfs:label	"Puyi"@tl .\
+<Puyi>	rdfs:label	"\uc0\u341 \'b8\u136 \u341 \'b8\u261 \u341 \'b8\u129 \u341 \'b8\u321 \u341 \'b8\u158 \u341 \'b8\u321 \u341 \'b8\u321 \u341 \'b8\u148 \u341 \'b8\'b4\u341 \'b8\u156 \u341 \'b8\'9a\u341 \'9a\u136 \u341 \'b8\'ad\u341 \'b8\u318 \u341 \'9a\u139 "@th .\
+<Puyi>	rdfs:label	"Puyi"@tr .\
+<Puyi>	rdfs:label	"\uc0\u272 \u159 \u323 \u131  \u272 \u134 "@uk .\
+<Puyi>	rdfs:label	"Ph\'e1\uc0\u357 \u149  Nghi"@vi .\
+<Puyi>	rdfs:label	"\uc0\u263 \u351 \u317 \u314 \u132 \u128 "@zh-yue .\
+<Puyi>	rdfs:label	"\uc0\u263 \u351 \u317 \'e4\u357 \u350 "@zh .\
+<Edwin_Edwards>	rdfs:label	"Edwin Edwards"@cs .\
+<Edwin_Edwards>	rdfs:label	"Edwin Edwards"@de .\
+<Edwin_Edwards>	rdfs:label	"Edwin Edwards"@fr .\
+<Edwin_Edwards>	rdfs:label	"Edwin Washington Edwards"@la .\
+<Edwin_Edwards>	rdfs:label	"Edwin Edwards"@pt .\
+<Edwin_Edwards>	rdfs:label	"\uc0\u272 \u149 \u272 \'b4\u272 \u731 \u323 \u150 \u272 \u733  \u272 \u149 \u272 \'b4\u272 \u731 \u272 \'b0\u323 \u128 \u272 \'b4\u323 \u129 "@uk .\
+<Kid_Rock>	rdfs:label	"\uc0\u272 \u154 \u272 \'b8\u272 \'b4 \u272 \'a0\u272 \'9e\u272 \u351 "@bg .\
+<Kid_Rock>	rdfs:label	"Kid Rock"@cs .\
+<Kid_Rock>	rdfs:label	"Kid Rock"@da .\
+<Kid_Rock>	rdfs:label	"Kid Rock"@de .\
+<Kid_Rock>	rdfs:label	"Kid Rock"@es .\
+<Kid_Rock>	rdfs:label	"\'da\'8a\uc0\u368 \u140 \u344 \u379  \u344 \u261 \u344 \'a7\'da\'8a"@fa .\
+<Kid_Rock>	rdfs:label	"Kid Rock"@fr .\
+<Kid_Rock>	rdfs:label	"Kid Rock"@it .\
+<Kid_Rock>	rdfs:label	"Kid Rock"@lv .\
+<Kid_Rock>	rdfs:label	"Kid Rock"@nl .\
+<Kid_Rock>	rdfs:label	"\uc0\u259 \u130 \'ad\u259 \u131 \u131 \u259 \u131 \u137 \u259 \u131 \u357 \u259 \u131 \'ad\u259 \u131 \u131 \u259 \u130 \u379 "@ja .\
+<Kid_Rock>	rdfs:label	"Kid Rock"@no .\
+<Kid_Rock>	rdfs:label	"Kid Rock"@pl .\
+<Kid_Rock>	rdfs:label	"Kid Rock"@pt .\
+<Kid_Rock>	rdfs:label	"\uc0\u272 \u154 \u272 \'b8\u272 \'b4 \u272 \'a0\u272 \'9e\u272 \u351 "@ru .\
+<Kid_Rock>	rdfs:label	"Kid Rock"@simple .\
+<Kid_Rock>	rdfs:label	"Kid Rock"@sk .\
+<Kid_Rock>	rdfs:label	"Kid Rock"@fi .\
+<Kid_Rock>	rdfs:label	"Kid Rock"@sv .\
+<Kid_Rock>	rdfs:label	"\uc0\u341 \'b8\u132 \u341 \'b8\'b4\u341 \'b8\u148  \u341 \'b8\u321 \u341 \'9a\u135 \u341 \'b8\'ad\u341 \'b8\u129 "@th .\
+<Kid_Rock>	rdfs:label	"Kid Rock"@tr .\
+<Susilo_Bambang_Yudhoyono>	rdfs:label	"Susilo Bambang Yudhoyono"@af .\
+<Susilo_Bambang_Yudhoyono>	rdfs:label	"\uc0\u344 \u322 \u366 \u136 \u344 \u322 \u366 \u138 \u366 \u132 \u366 \u136  \u344 \'a8\u344 \'a7\u366 \u134 \u344 \'a8\u344 \'a7\u366 \u134 \u344 \u351  \u366 \u138 \u366 \u136 \u344 \u379 \u366 \u135 \u366 \u136 \u366 \u134 \u366 \u136 "@ar .\
+<Susilo_Bambang_Yudhoyono>	rdfs:label	"Susilo Bambang Yudhoyono"@bjn .\
+<Susilo_Bambang_Yudhoyono>	rdfs:label	"Susilo Bambang Yudhoyono"@map-bms .\
+<Susilo_Bambang_Yudhoyono>	rdfs:label	"\uc0\u272 \u260 \u323 \u131 \u323 \u129 \u323 \u150 \u272 \u357 \u272 \'b0 \u272 \u145 \u272 \'b0\u272 \u378 \u272 \u261 \u272 \'b0\u272 \u733 \u272 \u322  \u272 \'8e\u272 \'b4\u272 \'b0\u323 \u145 \u272 \u733 \u272 \'b0"@be .\
+<Susilo_Bambang_Yudhoyono>	rdfs:label	"Susilo Bambang Yudhoyono"@bs .\
+<Susilo_Bambang_Yudhoyono>	rdfs:label	"Susilo Bambang Yudhoyono"@br .\
+<Susilo_Bambang_Yudhoyono>	rdfs:label	"Susilo Bambang Yudhoyono"@ca .\
+<Susilo_Bambang_Yudhoyono>	rdfs:label	"Susilo Bambang Yudhoyono"@cy .\
+<Susilo_Bambang_Yudhoyono>	rdfs:label	"Susilo Bambang Yudhoyono"@da .\
+<Susilo_Bambang_Yudhoyono>	rdfs:label	"Susilo Bambang Yudhoyono"@de .\
+<Susilo_Bambang_Yudhoyono>	rdfs:label	"Susilo Bambang Yudhoyono"@et .\
+<Susilo_Bambang_Yudhoyono>	rdfs:label	"\'ce\uc0\u321 \'ce\u380 \u270 \u133 \u270 \u131 \'ce\u379 \'ce\u357 \'ce\u380  \'ce\u156 \u270 \u128 \'ce\u377 \'ce\u378 \u270 \u128 \'ce\u261 \'ce\u733 \'ce\u322 \'ce\u351  \'ce\u147 \'ce\'9a\'ce\u380 \u270 \u133 \'ce\u733 \u270 \u132 \u270 \u135 \'ce\u380 \'ce\u322 \'ce\'9a\u270 \u140 \'ce\u733 \'ce\u380 "@el .\
+<Susilo_Bambang_Yudhoyono>	rdfs:label	"Susilo Bambang Yudhoyono"@es .\
+<Susilo_Bambang_Yudhoyono>	rdfs:label	"Susilo Bambang Yudhoyono"@eo .\
+<Susilo_Bambang_Yudhoyono>	rdfs:label	"Susilo Bambang Yudhoyono"@fr .\
+<Susilo_Bambang_Yudhoyono>	rdfs:label	"Susilo Bambang Yudhoyono"@fy .\
+<Susilo_Bambang_Yudhoyono>	rdfs:label	"Susilo Bambang Yudhoyono"@gl .}

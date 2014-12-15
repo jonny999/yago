@@ -1,0 +1,68 @@
+Vstup:
+
+D. W. Griffith had the highest standing amongst American directors in the industry, because of the dramatic excitement he conveyed to the audience through his films. The American industry, or "Hollywood", as it was becoming known after its new geographical center in California, gained the position it has held, more or less, ever since: film factory for the world and exporting its product to most countries on earth. By the 1920s, the United States reached what is still its era of greatest-ever output, producing an average of 800 feature films annually, or 82% of the global total (Eyman, 1997). During late 1927, Warners released The Jazz Singer, the first synchronized dialogue (and singing) in a feature film. 
+
+Výsledky vlastná implementácia:
+California, United States
+
+Výsledky dbpedia-spotlight:
+American, Califormia,United States, The Jazz Singer, Hollywood
+
+Vstup:
+
+George Washington, the first president, was inaugurated in 1789 after a unanimous vote of the Electoral College.he is the only president to have served more than two terms. Andrew Jackson, the seventh president, was the first to be elected by white men of all classes in 1828 after most laws barring non-land-owners from voting were repealed. Warren Harding was the first elected after women gained voting rights in 1920. Four presidents – Rutherford B. Hayes, Benjamin Harrison and George W. Bush – lost the popular vote but assumed office. John F. Kennedy has been the only president of Roman Catholic faith, and the current president, Barack Obama, is the first president of African descent.
+
+Výsledky vlastná implementácia:
+George Washington, Andrew Jackson, Benjamin Harrison, Barack Obama
+
+Výsledky dbpedia-spotlight:
+George Washington,  Andrew Jackson, Warren Harding, Benjamin Harrison, Roman Catholic, Barack Obama
+
+Vstup:
+
+Amblin' also became the name of his production company, which turned out such classics as E.T. the Extra-Terrestrial (1982). Spielberg had a unique and classic early directing project, Duel (1971), with Dennis Weaver. In the early 1970s, Spielberg was working on TV, directing among others such series as Rod Serling's Night Gallery (1969), Marcus Welby, M.D. (1969) and Columbo: Murder by the Book (1971). All of his work in television and short films, as well as his directing projects, were just a hint of the wellspring of talent that would dazzle audiences all over the world.
+
+Výsledky vlastná implementácia:
+Amblin, Dennis Weaver, Rod Serling
+
+Výsledky dbpedia-spotlight:
+Amblin, E.T. the Extra-Terrestrial,  Dennis Weaver, Rod Serling, Night Gallery, Marcus Welby, M.D., Columbo
+
+Vstup:
+
+First documented in the 13th century, Berlin was the capital of the Kingdom of Prussia (1701–1918), the German Empire (1871–1918), the Weimar Republic (1919–33) and the Third Reich (1933–45). Berlin in the 1920s was the third largest municipality in the world. After World War II, the city became divided into East Berlin -- the capital of East Germany -- and West Berlin, a West German exclave surrounded by the Berlin Wall from 1961–89. Following German reunification in 1990, the city regained its status as the capital of Germany, hosting 147 foreign embassies.
+
+Výsledky vlastná implementácia:
+First, World War II
+
+Výsledky dbpedia-spotlight:
+Prussia, Berlin, Weimar Republic, German Empire, East Germany, Berlin Wall, German reunification, municipality, World War II, German exclave
+
+Vstup:
+
+It was at this spot just over a century ago that the ancestors of Kenya's successful Indian community first set foot on African soil. They came in ships and dhows, having been coaxed here to build one of the continent's great railways. As that railway -- which was soon christened the "lunatic line" because of its high cost and the dangers faced by those constructing it -- snaked through the country towards Uganda in the years that followed, so did the Indian community.
+
+Výsledky vlastná implementácia:
+Nič nebolo nájdené.
+
+Výsledky dbpedia-spotlight:
+Kenya, dhows, Indian, Uganda
+
+Vstup:
+
+Bucciarelli's pictures provide a rare window into a civilian population under siege."South Sudan's war represents one of the longest and most forgotten African conflicts," he said. "Its tragic consequences are quietly fading away from the headlines, making these pictures even more crucial.” South Sudan split from Sudan in 2011 as part of a peace deal that ended decades of war in Africa's largest nation. That war left 2 million people dead and ended with the peace agreement that included an independence referendum for the south.
+
+Výsledky vlastná implementácia:
+Nič nebolo nájdené.
+
+Výsledky dbpedia-spotlight:
+South Sudan, Sudan, Africa, ndependence referendum
+
+Vstup:
+
+The pace in 2014 was vastly different. This year's highlights were so above and beyond that without any discussion, we each picked seven of the same releases. Though I'm not going to divulge which ones they were, there was such a bounty of phenomenal albums released this year that the selection process was a joy. From John Dowland's elegant, elegiac and intimate pavanes, written at the dawn of the 17th century, to John (Coolidge) Adams' Saxophone Concerto and John Luther Adams' Become Ocean, both premiered just last year, the scope of what we loved reaches far and wide.
+
+Výsledky vlastná implementácia:
+ John Dowland, John Luther Adams
+
+Výsledky dbpedia-spotlight:
