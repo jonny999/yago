@@ -33,16 +33,27 @@ public class YagoParser {
     }
 
 //Public methods.
-    public GazeteerDataSet parseTypesOnPath(String path) {
+    public void parseTypesOnPath(String path) {
         this.gazeteerDataSet = new GazeteerDataSet();
 
         BufferedReader input = this.openYAGOFile(path);
-        this.processFile(input);
+        this.processTypesFile(input);
         
-       return this.gazeteerDataSet;
     }
 
+    public void parseAltNamesOnPath(String path){
+        if (path.length()>0 && this.gazeteerDataSet != null) {
+            BufferedReader input = this.openYAGOFile(path);
+            this.processAltNames(input);
+        }
+    }
+
+    public GazeteerDataSet getGazeteerDataSet() {
+        return gazeteerDataSet;
+    }
+    
 //Private methods
+    
     //Open file.
     private BufferedReader openYAGOFile(String path) {
         BufferedReader input = null;
@@ -58,7 +69,7 @@ public class YagoParser {
 
     //Read and parse File.
 
-    private void processFile(BufferedReader input) {
+    private void processTypesFile(BufferedReader input) {
         String lineStr;
 
         try {
@@ -66,7 +77,7 @@ public class YagoParser {
             while (lineStr != null) {
                 //Throw away useless lines.
                 if ((lineStr.length() > 0) && ('<' == lineStr.charAt(0))) {
-                    this.processLine(lineStr);
+                    this.processTypesLine(lineStr);
                 }
                 lineStr = input.readLine();
             }
@@ -74,10 +85,26 @@ public class YagoParser {
             Logger.getLogger(YagoParser.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
-
+    
+    private void processAltNames(BufferedReader input){
+        String lineStr;
+         
+        try {
+            lineStr = input.readLine();
+            while (lineStr != null) {
+                
+                this.proccessAltNameLine(lineStr);
+                lineStr = input.readLine();
+                
+            }
+        } catch (IOException ex) {
+            Logger.getLogger(YagoParser.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+    
     //Process one line and add one item to dataset
 
-    private void processLine(String lineStr) {
+    private void processTypesLine(String lineStr) {
         String[] parts = lineStr.split(">.*<");
 
         if (parts.length == 2) {
@@ -89,20 +116,19 @@ public class YagoParser {
 
         }
     }
+    private void proccessAltNameLine(String lineStr){
+        Pattern pattern;
+        pattern = Pattern.compile("<(.*)>.rdfs:label.*\"(.*)\"");
+        Matcher matcher = pattern.matcher(lineStr);
 
+        if (matcher.find()) {
+            this.gazeteerDataSet.addAltName(matcher.group(1).replaceAll("[_]", " "),matcher.group(2));
+        }
+    }
+    
     //Clean String
     
     private String cleanString(String part) {
-        
-        Pattern pattern;
-        pattern = Pattern.compile("<(.*)>.rdfs:label.*\"(.*)\"");
-        Matcher matcher = pattern.matcher(part);
-
-        if (matcher.find()) {
-            matcher.group(1);
-            matcher.group(2);
-        }
-        
         
         String finalStr = part.replaceAll("[<>. ]|^[a-zA-Z0-9]*_", "");
         finalStr = finalStr.replaceAll("_", " ");
@@ -110,6 +136,6 @@ public class YagoParser {
             finalStr = "N/A";
         }
 
-        return finalStr.toLowerCase();
+        return finalStr;
     }   
 }
