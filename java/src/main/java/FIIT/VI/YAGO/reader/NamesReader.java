@@ -7,6 +7,11 @@ import FIIT.VI.YAGO.domain.Article;
 import FIIT.VI.YAGO.domain.Names;
 import FIIT.VI.YAGO.domain.RDFTriplet;
 
+/**
+ * Reader of names for wikipedia
+ * @author mm
+ *
+ */
 public class NamesReader extends Reader {
 
 	public NamesReader() throws IOException {
@@ -18,6 +23,11 @@ public class NamesReader extends Reader {
 		initiliaze();
 	}
 
+	/**
+	 * Read article based on REGEX rules
+	 * @return
+	 * @throws IOException
+	 */
 	public Article readArticle() throws IOException {
 
 		Article article = new Article();

@@ -4,10 +4,20 @@ import org.apache.lucene.document.Document;
 import org.apache.lucene.document.Field;
 import org.apache.lucene.document.TextField;
 
+/**
+ * Domain entity represent YAGO rdf triplet
+ * @author mm
+ *
+ */
 public class RDFTriplet {
 
+	/** Subject RDF*/
 	private String subject;
+	
+	/** Relation between subject and object*/
 	private String relation;
+	
+	/**Object*/
 	private String object;
 
 	public RDFTriplet() {
@@ -19,7 +29,10 @@ public class RDFTriplet {
 		this.relation = relation;
 	}
 	
-	
+	/**
+	 * Create lucene document based on variables
+	 * @return lucene document
+	 */
 	public Document document() {
 		Document doc = new Document();
 

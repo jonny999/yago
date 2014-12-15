@@ -1,8 +1,6 @@
 package FIIT.VI.YAGO.parser;
 
-import java.io.BufferedWriter;
 import java.io.File;
-import java.io.FileWriter;
 import java.io.IOException;
 
 import org.codehaus.jackson.JsonParseException;
@@ -15,20 +13,38 @@ import FIIT.VI.YAGO.reader.CategoryReader;
 import FIIT.VI.YAGO.reader.DbInstanceReader;
 import FIIT.VI.YAGO.reader.NamesReader;
 import FIIT.VI.YAGO.reader.WikiReader;
+import FIIT.VI.YAGO.util.FileUtil;
 
+/**
+ * Wikipedia parser of documents
+ * @author mm
+ *
+ */
 public class WikiParser {
 
 	private static final ObjectMapper MAPPER = new ObjectMapper();
 
+	/**
+	 * Create based structure of wikipedia article
+	 * @param path path to file for creation of article
+	 * @param reader reader of wikipedia file
+	 * @throws IOException
+	 */
 	public static void createBaseWikiArticles(String path, WikiReader reader)
 			throws IOException {
 		Article a;
 
 		while ((a = reader.readArticle()) != null) {
-			createOrUpdateAndSave(a.toJson(), a.getName(), path);
+			createOrUpdateAndSave(a.toJson(), a.parseFilesName(), path);
 		}
 	}
 
+	/**
+	 * Update created wikipedia articles of tags, if article not exist, nothing is update
+	 * @param path path to file for update of article
+	 * @param reader reader for tags of wikipedia
+	 * @throws IOException
+	 */
 	public static void updateBaseWikiArticlesCategories(String path,
 			CategoryReader reader) throws IOException {
 		Article a;
@@ -38,11 +54,17 @@ public class WikiParser {
 			update = loadArticle(a.getName(), path);
 			if (update != null) {
 				update.setCategories(a.getCategories());
-				createOrUpdateAndSave(update.toJson(), a.getName(), path);
+				createOrUpdateAndSave(update.toJson(), a.parseFilesName(), path);
 			}
 		}
 	}
 
+	/**
+	 * Update created wikipedia articles of alternatives name, if article not exist, nothing is update 
+	 * @param path path to file for update article
+	 * @param reader reader for alternatives names
+	 * @throws IOException
+	 */
 	public static void updateBaseWikiArticlesAlternativeNames(String path,
 			NamesReader reader) throws IOException {
 		Article a;
@@ -53,11 +75,17 @@ public class WikiParser {
 			if (update != null) {
 
 				update.setNames(a.getNames());
-				createOrUpdateAndSave(update.toJson(), a.getName(), path);
+				createOrUpdateAndSave(update.toJson(), a.parseFilesName(), path);
 			}
 		}
 	}
 
+	/**
+	 * Update created wikipedia articles of dbpedia url, if article not exist, nothing is update
+	 * @param path path to file for update article
+	 * @param reader reader for dppedia ulrs
+	 * @throws IOException
+	 */
 	public static void updateBaseWikiArticlesAlternativeLinks(String path,
 			DbInstanceReader reader) throws IOException {
 		RDFTriplet triplet;
@@ -68,16 +96,34 @@ public class WikiParser {
 			if (update != null) {
 
 				update.setUrlAlternative(triplet.getObject());
-				createOrUpdateAndSave(update.toJson(), update.getName(), path);
+				createOrUpdateAndSave(update.toJson(), update.parseFilesName(),
+						path);
 			}
 		}
 	}
 
+	/**
+	 * Load article from folder and based unique name of entity
+	 * @param name unique name of entity
+	 * @param path folder path where is entities save 
+	 * @return wikipedia article
+	 * @throws JsonParseException
+	 * @throws JsonMappingException
+	 * @throws IOException
+	 */
 	private static Article loadArticle(String name, String path)
 			throws JsonParseException, JsonMappingException, IOException {
 		return loadArticle(path + name + ".json");
 	}
 
+	/**
+	 * Load article based on path to file
+	 * @param path path to file
+	 * @return wikipedia article
+	 * @throws JsonParseException
+	 * @throws JsonMappingException
+	 * @throws IOException
+	 */
 	public static Article loadArticle(String path) throws JsonParseException,
 			JsonMappingException, IOException {
 
@@ -90,17 +136,16 @@ public class WikiParser {
 		return MAPPER.readValue(file, Article.class);
 	}
 
+	/**
+	 * Create or override file based on data, name and path
+	 * @param json data for save
+	 * @param name unique name of wikipedia article 
+	 * @param path path to folder
+	 * @throws IOException
+	 */
 	private static void createOrUpdateAndSave(String json, String name,
 			String path) throws IOException {
-		File file = new File(path + name + ".json");
+		FileUtil.createOrUpdateAndSave(json, name, path);
 
-		if (!file.exists()) {
-			file.createNewFile();
-		}
-		FileWriter writer = new FileWriter(file.getAbsolutePath());
-		BufferedWriter bw = new BufferedWriter(writer);
-
-		bw.write(json);
-		bw.close();
 	}
 }

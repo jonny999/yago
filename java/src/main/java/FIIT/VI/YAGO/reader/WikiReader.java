@@ -5,8 +5,13 @@ import java.util.regex.Pattern;
 
 import FIIT.VI.YAGO.domain.Article;
 import FIIT.VI.YAGO.domain.RDFTriplet;
-import FIIT.VI.YAGO.parser.helper.Replacer;
+import FIIT.VI.YAGO.util.Replacer;
 
+/**
+ * Reader of wikipedia base data
+ * @author mm
+ *
+ */
 public class WikiReader extends Reader {
 
 	private static final String REGEX_URL = "<(.*)>\t<(hasWikipediaUrl)>\t?<(.*)?>.";
@@ -24,6 +29,11 @@ public class WikiReader extends Reader {
 		initiliaze();
 	}
 
+	/**
+	 * Read article from defined file and based on REGEX rules
+	 * @return
+	 * @throws IOException
+	 */
 	public Article readArticle() throws IOException {
 
 		Article article = new Article();
