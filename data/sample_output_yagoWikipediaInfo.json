@@ -1,0 +1,262 @@
+[
+	{
+		"name": "Puyi",
+		"size": "\"52954\"^^xsd:integer",
+		"ulrWikipedia": "http://en.wikipedia.org/wiki/Puyi",
+		"linksTo": 
+		[
+			"Hirohito",
+			"Zhou_Enlai"
+		]
+	},
+
+	{
+		"name": "Edwin_Edwards",
+		"size": "\"48458\"^^xsd:integer",
+		"ulrWikipedia": "http://en.wikipedia.org/wiki/Edwin_Edwards",
+		"linksTo": 
+		[
+			
+		]
+	},
+
+	{
+		"name": "Kid_Rock",
+		"size": "\"55917\"^^xsd:integer",
+		"ulrWikipedia": "http://en.wikipedia.org/wiki/Kid_Rock",
+		"linksTo": 
+		[
+			"Jennifer_Lopez"
+		]
+	},
+
+	{
+		"name": "Susilo_Bambang_Yudhoyono",
+		"size": "\"49207\"^^xsd:integer",
+		"ulrWikipedia": "http://en.wikipedia.org/wiki/Susilo_Bambang_Yudhoyono",
+		"linksTo": 
+		[
+			
+		]
+	},
+
+	{
+		"name": "Deval_Patrick",
+		"size": "\"60879\"^^xsd:integer",
+		"ulrWikipedia": "http://en.wikipedia.org/wiki/Deval_Patrick",
+		"linksTo": 
+		[
+			"Africa",
+			"John_Quincy_Adams"
+		]
+	},
+
+	{
+		"name": "Faye_Wong",
+		"size": "\"69057\"^^xsd:integer",
+		"ulrWikipedia": "http://en.wikipedia.org/wiki/Faye_Wong",
+		"linksTo": 
+		[
+			
+		]
+	},
+
+	{
+		"name": "Hu_Jintao",
+		"size": "\"48059\"^^xsd:integer",
+		"ulrWikipedia": "http://en.wikipedia.org/wiki/Hu_Jintao",
+		"linksTo": 
+		[
+			"Africa"
+		]
+	},
+
+	{
+		"name": "Sete_Gibernau",
+		"size": "\"62234\"^^xsd:integer",
+		"ulrWikipedia": "http://en.wikipedia.org/wiki/Sete_Gibernau",
+		"linksTo": 
+		[
+			
+		]
+	},
+
+	{
+		"name": "Michael_Foot",
+		"size": "\"50348\"^^xsd:integer",
+		"ulrWikipedia": "http://en.wikipedia.org/wiki/Michael_Foot",
+		"linksTo": 
+		[
+			"James_Callaghan",
+			"Rupert_Murdoch",
+			"John_Major"
+		]
+	},
+
+	{
+		"name": "Kim_Philby",
+		"size": "\"57491\"^^xsd:integer",
+		"ulrWikipedia": "http://en.wikipedia.org/wiki/Kim_Philby",
+		"linksTo": 
+		[
+			
+		]
+	},
+
+	{
+		"name": "Sacha_Baron_Cohen",
+		"size": "\"53395\"^^xsd:integer",
+		"ulrWikipedia": "http://en.wikipedia.org/wiki/Sacha_Baron_Cohen",
+		"linksTo": 
+		[
+			"Jessica_Simpson",
+			"Newt_Gingrich",
+			"Donald_Trump"
+		]
+	},
+
+	{
+		"name": "Hank_Azaria",
+		"size": "\"74228\"^^xsd:integer",
+		"ulrWikipedia": "http://en.wikipedia.org/wiki/Hank_Azaria",
+		"linksTo": 
+		[
+			"Elvis_Costello",
+			"Ben_Stiller",
+			"Nancy_Cartwright"
+		]
+	},
+
+	{
+		"name": "Amitabh_Bachchan",
+		"size": "\"57757\"^^xsd:integer",
+		"ulrWikipedia": "http://en.wikipedia.org/wiki/Amitabh_Bachchan",
+		"linksTo": 
+		[
+			"Satyajit_Ray"
+		]
+	},
+
+	{
+		"name": "Fredrik_Reinfeldt",
+		"size": "\"45749\"^^xsd:integer",
+		"ulrWikipedia": "http://en.wikipedia.org/wiki/Fredrik_Reinfeldt",
+		"linksTo": 
+		[
+			
+		]
+	},
+
+	{
+		"name": "Lenny_Kravitz",
+		"size": "\"48623\"^^xsd:integer",
+		"ulrWikipedia": "http://en.wikipedia.org/wiki/Lenny_Kravitz",
+		"linksTo": 
+		[
+			"Nicole_Kidman",
+			"John_Lennon"
+		]
+	},
+
+	{
+		"name": "Fyodor_Dostoyevsky",
+		"size": "\"49093\"^^xsd:integer",
+		"ulrWikipedia": "http://en.wikipedia.org/wiki/Fyodor_Dostoyevsky",
+		"linksTo": 
+		[
+			"Rowan_Williams",
+			"Vladimir_Nabokov",
+			"James_Joyce"
+		]
+	},
+
+	{
+		"name": "Esther_Williams",
+		"size": "\"48190\"^^xsd:integer",
+		"ulrWikipedia": "http://en.wikipedia.org/wiki/Esther_Williams",
+		"linksTo": 
+		[
+			"Gene_Kelly",
+			"Clark_Gable",
+			"Judy_Garland",
+			"Lucille_Ball"
+		]
+	},
+
+	{
+		"name": "Gavin_Newsom",
+		"size": "\"52737\"^^xsd:integer",
+		"ulrWikipedia": "http://en.wikipedia.org/wiki/Gavin_Newsom",
+		"linksTo": 
+		[
+			
+		]
+	},
+
+	{
+		"name": "Princess_Helena_of_the_United_Kingdom",
+		"size": "\"46229\"^^xsd:integer",
+		"ulrWikipedia": "http://en.wikipedia.org/wiki/Princess_Helena_of_the_United_Kingdom",
+		"linksTo": 
+		[
+			"Princess_Beatrice_of_the_United_Kingdom"
+		]
+	},
+
+	{
+		"name": "Oscar_De_La_Hoya",
+		"size": "\"54657\"^^xsd:integer",
+		"ulrWikipedia": "http://en.wikipedia.org/wiki/Oscar_De_La_Hoya",
+		"linksTo": 
+		[
+			
+		]
+	},
+
+	{
+		"name": "Jon_Voight",
+		"size": "\"50516\"^^xsd:integer",
+		"ulrWikipedia": "http://en.wikipedia.org/wiki/Jon_Voight",
+		"linksTo": 
+		[
+			"Tom_Cruise",
+			"Laurence_Olivier",
+			"Newt_Gingrich",
+			"Jane_Fonda",
+			"John_Wayne",
+			"Hank_Azaria",
+			"Ben_Stiller",
+			"Mike_Huckabee"
+		]
+	},
+
+	{
+		"name": "Gary_Oldman",
+		"size": "\"59282\"^^xsd:integer",
+		"ulrWikipedia": "http://en.wikipedia.org/wiki/Gary_Oldman",
+		"linksTo": 
+		[
+			"Maggie_Gyllenhaal"
+		]
+	},
+
+	{
+		"name": "Jack_Dann",
+		"size": "\"47490\"^^xsd:integer",
+		"ulrWikipedia": "http://en.wikipedia.org/wiki/Jack_Dann",
+		"linksTo": 
+		[
+			"Roald_Dahl"
+		]
+	},
+
+	{
+		"name": "Ralph_Flanders",
+		"size": "\"47297\"^^xsd:integer",
+		"ulrWikipedia": "http://en.wikipedia.org/wiki/Ralph_Flanders",
+		"linksTo": 
+		[
+			
+		]
+	}
+]

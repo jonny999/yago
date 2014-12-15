@@ -1,0 +1,93 @@
+{
+  "name" : "Kid_Rock",
+  "size" : "\"55917\"^^xsd:integer",
+  "wikiName" : "Kid Rock",
+  "ulrWikipedia" : "http://en.wikipedia.org/wiki/Kid_Rock",
+  "linksTo" : [ "Jennifer Lopez" ],
+  "names" : [ {
+    "expression" : "\"Кид Рок\"@bg",
+    "language" : "bg",
+    "name" : "Кид Рок"
+  }, {
+    "expression" : "\"Kid Rock\"@cs",
+    "language" : "cs",
+    "name" : "Kid Rock"
+  }, {
+    "expression" : "\"Kid Rock\"@da",
+    "language" : "da",
+    "name" : "Kid Rock"
+  }, {
+    "expression" : "\"Kid Rock\"@de",
+    "language" : "de",
+    "name" : "Kid Rock"
+  }, {
+    "expression" : "\"Kid Rock\"@es",
+    "language" : "es",
+    "name" : "Kid Rock"
+  }, {
+    "expression" : "\"کید راک\"@fa",
+    "language" : "fa",
+    "name" : "کید راک"
+  }, {
+    "expression" : "\"Kid Rock\"@fr",
+    "language" : "fr",
+    "name" : "Kid Rock"
+  }, {
+    "expression" : "\"Kid Rock\"@it",
+    "language" : "it",
+    "name" : "Kid Rock"
+  }, {
+    "expression" : "\"Kid Rock\"@lv",
+    "language" : "lv",
+    "name" : "Kid Rock"
+  }, {
+    "expression" : "\"Kid Rock\"@nl",
+    "language" : "nl",
+    "name" : "Kid Rock"
+  }, {
+    "expression" : "\"キッド・ロック\"@ja",
+    "language" : "ja",
+    "name" : "キッド・ロック"
+  }, {
+    "expression" : "\"Kid Rock\"@no",
+    "language" : "no",
+    "name" : "Kid Rock"
+  }, {
+    "expression" : "\"Kid Rock\"@pl",
+    "language" : "pl",
+    "name" : "Kid Rock"
+  }, {
+    "expression" : "\"Kid Rock\"@pt",
+    "language" : "pt",
+    "name" : "Kid Rock"
+  }, {
+    "expression" : "\"Кид Рок\"@ru",
+    "language" : "ru",
+    "name" : "Кид Рок"
+  }, {
+    "expression" : "\"Kid Rock\"@simple",
+    "language" : "simple",
+    "name" : "Kid Rock"
+  }, {
+    "expression" : "\"Kid Rock\"@sk",
+    "language" : "sk",
+    "name" : "Kid Rock"
+  }, {
+    "expression" : "\"Kid Rock\"@fi",
+    "language" : "fi",
+    "name" : "Kid Rock"
+  }, {
+    "expression" : "\"Kid Rock\"@sv",
+    "language" : "sv",
+    "name" : "Kid Rock"
+  }, {
+    "expression" : "\"คิด ร็อก\"@th",
+    "language" : "th",
+    "name" : "คิด ร็อก"
+  }, {
+    "expression" : "\"Kid Rock\"@tr",
+    "language" : "tr",
+    "name" : "Kid Rock"
+  } ],
+  "categories" : [ "Rap rock musicians", "People from Macomb County, Michigan", "Living people" ]
+}
